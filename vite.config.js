@@ -161,7 +161,7 @@ const addTransformIndexHtml = {
 				},
 				{
 					tag: 'script',
-					attrs: {type: 'module'},
+					attrs: { type: 'module' },
 					children: configHorizonsConsoleErrroHandler,
 					injectTo: 'head',
 				},
@@ -176,7 +176,7 @@ const addTransformIndexHtml = {
 	},
 };
 
-console.warn = () => {};
+console.warn = () => { };
 
 const logger = createLogger()
 const loggerError = logger.error
@@ -190,6 +190,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: "/la-pollera-oficial/", // muy importante para GitHub Pages
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
@@ -204,7 +205,7 @@ export default defineConfig({
 		allowedHosts: true,
 	},
 	resolve: {
-		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
+		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json',],
 		alias: {
 			'@': path.resolve(__dirname, './src'),
 		},
