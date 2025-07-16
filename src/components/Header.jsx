@@ -26,12 +26,7 @@ const Header = () => {
     }
   };
 
-  const handleReservation = () => {
-    toast({
-      title: t.common.notImplemented,
-      duration: 3000,
-    });
-  };
+
 
   const navItems = [
     { key: 'home', label: t.nav.home, id: 'hero' },
@@ -42,9 +37,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gray-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -52,7 +46,11 @@ const Header = () => {
             onClick={() => scrollToSection('hero')}
             className="flex items-center space-x-2 cursor-pointer transition-transform duration-300 hover:scale-105"
           >
+            {/* Cambiar a logo oficial y hacer redondo. */}
             <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/79257f20-aa13-454e-9ca7-57fabbfefedb/e3928dd534ee3db168a7710943a22bfc.jpg" alt="La Pollera Logo" className="w-14 h-14" />
+            <span className={`font-display text-xl font-bold text-white`}>
+              La Pollera
+            </span>
           </button>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -69,13 +67,15 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <LanguageSelector />
-            <button
-              onClick={handleReservation}
+            <a
+              target='_blank'
+              href={'tel:+50624780213'}
               className="flex items-center space-x-2 bg-gradient-to-r from-brand-orange to-brand-yellow text-white px-6 py-2 rounded-full font-medium hover:from-brand-yellow hover:to-brand-orange transition-all duration-300 shadow-lg transform hover:scale-105"
             >
               <FaPhone className="w-4 h-4" />
               <span>{t.nav.reservation}</span>
-            </button>
+
+            </a>
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
@@ -101,12 +101,14 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <button
-                onClick={handleReservation}
+              <a
+                target='_blank'
+                href={'tel:+50624780213'}
                 className="block w-full text-left px-6 py-3 text-brand-orange font-medium hover:bg-gray-700 transition-colors duration-200"
               >
                 {t.nav.reservation}
-              </button>
+
+              </a>
             </div>
           </div>
         )}

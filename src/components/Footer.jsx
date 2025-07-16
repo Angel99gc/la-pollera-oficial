@@ -41,20 +41,33 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
+              {/** TODO: Imagen redonda y cambiar a logo oficial */}
               <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/79257f20-aa13-454e-9ca7-57fabbfefedb/e3928dd534ee3db168a7710943a22bfc.jpg" alt="La Pollera Logo" className="w-16 h-16" />
+              <span className="font-display text-2xl font-bold">
+                La Pollera
+              </span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               {t.footer.description}
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
-                <button
-                  key={index}
-                  onClick={handleSocialClick}
-                  className="w-10 h-10 bg-gray-800 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
-                >
-                  <social.icon className="w-5 h-5" />
-                </button>
+                social.label === 'Whatsapp' ?
+                  <a
+                    key={index}
+                    href='https://wa.me/50624780213'
+                    target='_blank'
+                    className="w-10 h-10 bg-gray-800 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a> :
+                  <button
+                    key={index}
+                    onClick={handleSocialClick}
+                    className="w-10 h-10 bg-gray-800 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </button>
               ))}
             </div>
           </div>
@@ -81,19 +94,19 @@ const Footer = () => {
               {t.contact.title}
             </span>
             <div className="space-y-4">
-              <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Central,+San+José,+Costa+Rica" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-3 group">
+              <a href="https://maps.app.goo.gl/Qj7j42zfnbjGMWj3A" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-3 group">
                 <FaMapMarkerAlt className="w-5 h-5 text-brand-orange mt-1 flex-shrink-0 group-hover:text-brand-yellow transition-colors" />
                 <span className="text-gray-300 text-sm group-hover:text-white transition-colors">
-                  Avenida Central, San José, Costa Rica
+                  {t.contact.exactAddress} {t.contact.fullAddress}
                 </span>
               </a>
-              <a href="tel:+50622223333" className="flex items-center space-x-3 group">
+              <a href="tel:+50624780213" className="flex items-center space-x-3 group">
                 <FaPhone className="w-5 h-5 text-brand-orange flex-shrink-0 group-hover:text-brand-yellow transition-colors" />
-                <span className="text-gray-300 text-sm group-hover:text-white transition-colors">+506 2222-3333</span>
+                <span className="text-gray-300 text-sm group-hover:text-white transition-colors">+506 2478-0213</span>
               </a>
-              <a href="mailto:contacto@lapollera.cr" className="flex items-center space-x-3 group">
+              <a href="mailto:fhelleng@hotmail.com" className="flex items-center space-x-3 group">
                 <FaEnvelope className="w-5 h-5 text-brand-orange flex-shrink-0 group-hover:text-brand-yellow transition-colors" />
-                <span className="text-gray-300 text-sm group-hover:text-white transition-colors">contacto@lapollera.cr</span>
+                <span className="text-gray-300 text-sm group-hover:text-white transition-colors">fhelleng@hotmail.com</span>
               </a>
             </div>
           </div>
@@ -104,11 +117,11 @@ const Footer = () => {
             </span>
             <div className="space-y-3">
               <div className="text-gray-300 text-sm">
-                <p className="font-medium">Lunes - Domingo</p>
-                <p>11:00 - 23:00</p>
+                <p className="font-medium">{t.footer.days}</p>
+                <p>11:00 AM - 11:00 PM</p>
               </div>
               <div className="text-gray-400 text-sm">
-                <p>¡Te esperamos!</p>
+                <p>{t.footer.waitingForYou}</p>
               </div>
             </div>
           </div>

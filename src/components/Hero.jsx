@@ -15,17 +15,11 @@ const Hero = () => {
     }
   };
 
-  const handleReservation = () => {
-    toast({
-      title: t.common.notImplemented,
-      duration: 3000,
-    });
-  };
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img  alt="Plato de pollo frito crujiente" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605543986887-5c59f90e1a54" />
+        <img alt="Plato de pollo frito crujiente" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605543986887-5c59f90e1a54" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
       </div>
 
@@ -92,15 +86,18 @@ const Hero = () => {
             >
               {t.hero.cta}
             </Button>
-
-            <Button
-              onClick={handleReservation}
-              variant="outline"
-              size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
+            <a
+              target='_blank'
+              href='tel:+50624780213'
             >
-              {t.hero.reserve}
-            </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
+              >
+                {t.hero.reserve}
+              </Button>
+            </a>
           </div>
         </div>
 

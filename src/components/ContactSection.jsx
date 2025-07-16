@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMapPin, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const ContactSection = () => {
@@ -7,30 +7,37 @@ const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: FaMapPin,
+      icon: FaMapMarkerAlt,
       title: t.contact.address,
-      content: 'Avenida Central, San José, Costa Rica',
-      href: `https://www.google.com/maps/search/?api=1&query=Avenida+Central,+San+José,+Costa+Rica`,
+      content: `${t.contact.exactAddress} ${t.contact.fullAddress}`,
+      href: `https://maps.app.goo.gl/Qj7j42zfnbjGMWj3A`,
       color: 'text-brand-orange'
     },
     {
       icon: FaPhone,
       title: t.contact.phone,
-      content: '+506 2222-3333',
-      href: 'tel:+50622223333',
+      content: '+506 2478-0213',
+      href: 'tel:+50624780213',
+      color: 'text-brand-orange'
+    },
+    {
+      icon: FaWhatsapp,
+      title: "Whatsapp",
+      content: '+506 2478-0213',
+      href: 'https://wa.me/50624780213',
       color: 'text-brand-orange'
     },
     {
       icon: FaEnvelope,
       title: t.contact.email,
-      content: 'contacto@lapollera.cr',
-      href: 'mailto:contacto@lapollera.cr',
+      content: 'fhelleng@hotmail.com',
+      href: 'mailto:fhelleng@hotmail.com',
       color: 'text-brand-orange'
     },
     {
       icon: FaClock,
       title: t.contact.hours,
-      content: 'Lun-Dom: 11:00 - 23:00',
+      content: t.contact.days,
       href: null,
       color: 'text-brand-orange'
     }
@@ -91,10 +98,10 @@ const ContactSection = () => {
             <h3 className="text-2xl font-bold text-white mb-6">
               {t.contact.location}
             </h3>
-            
+
             <div className="relative h-96 rounded-xl overflow-hidden shadow-2xl border-2 border-gray-700">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.981889815454!2d-84.0792641852062!3d9.93550399289899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e344177b8f3d%3A0x6b8f36d1a423f1e1!2sAvenida%20Central%2C%20San%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1sen!2sus!4v1684321098765"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1649.14303213788!2d-84.65056463232504!3d10.552132552256491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa00a5fd5af9f6d%3A0x44ddc8ec26a671ee!2sRestaurante%20la%20pollera!5e0!3m2!1ses-419!2scr!4v1752574684807!5m2!1ses-419!2scr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -104,21 +111,21 @@ const ContactSection = () => {
                 title="Restaurant Location"
                 className="rounded-xl"
               ></iframe>
-              
+
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm rounded-lg p-4">
                 <h4 className="font-bold text-gray-800 mb-1">La Pollera</h4>
-                <p className="text-sm text-gray-600">Avenida Central, San José</p>
+                <p className="text-sm text-gray-600">{t.contact.fullAddress}</p>
               </div>
             </div>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Avenida+Central,+San+José,+Costa+Rica"
+              href="https://maps.app.goo.gl/Qj7j42zfnbjGMWj3A"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-brand-orange to-brand-yellow text-white px-6 py-3 rounded-full font-medium hover:from-brand-yellow hover:to-brand-orange transition-all duration-300 shadow-lg transform hover:scale-105"
             >
-              <FaMapPin className="w-5 h-5" />
-              <span>Ver en Mapa Completo</span>
+              <FaMapMarkerAlt className="w-5 h-5" />
+              <span>{t.contact.viewOnMap}</span>
             </a>
           </div>
         </div>
