@@ -190,13 +190,13 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-	base: "/la-pollera-oficial/", // muy importante para GitHub Pages
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
 		react(),
 		addTransformIndexHtml
 	],
+	base: "/la-pollera-oficial/", // muy importante para GitHub Pages
 	server: {
 		cors: true,
 		headers: {
