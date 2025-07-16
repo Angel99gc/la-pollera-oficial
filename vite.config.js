@@ -197,13 +197,7 @@ export default defineConfig({
 		addTransformIndexHtml
 	],
 	base: "/la-pollera-oficial/", // muy importante para GitHub Pages
-	server: {
-		cors: true,
-		headers: {
-			'Cross-Origin-Embedder-Policy': 'credentialless',
-		},
-		allowedHosts: true,
-	},
+
 	resolve: {
 		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json',],
 		alias: {
