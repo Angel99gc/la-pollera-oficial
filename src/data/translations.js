@@ -1,3 +1,4 @@
+
 export const translations = {
   es: {
     nav: {
@@ -5,103 +6,121 @@ export const translations = {
       menu: 'Menú',
       about: 'Nosotros',
       contact: 'Contacto',
-      reservation: 'Reservar',
+      reservation: 'Reservar'
     },
     hero: {
       badge: 'El Mejor Sabor',
-      title: 'La Pollera <span class="gradient-text-orange">Bar & Restaurante</span>',
-      subtitle: 'Donde cada plato cuenta una historia.',
-      description: 'Sumérgete en una experiencia culinaria única, combinando recetas tradicionales con un toque moderno. Ingredientes frescos y un ambiente inigualable te esperan.',
+      title: 'La Pollera <span class="gradient-text-red">Bar & Restaurante</span>',
+      subtitle: 'Donde cada bocado es una celebración',
+      description: 'Descubre nuestro menú lleno de platos irresistibles, desde el pollo más crujiente hasta las carnes más jugosas.',
       cta: 'Ver Menú',
-      reserve: 'Hacer una Reserva',
+      reserve: 'Reservar Mesa'
     },
     menu: {
-      title: 'Nuestro Menú <span class="text-brand-orange">Exquisito</span>',
-      subtitle: 'Una selección de nuestros mejores platos, preparados con pasión y los ingredientes más frescos.',
+      title: 'Nuestro <span class="text-brand-red">Menú</span>',
+      subtitle: 'Sabores que te encantarán, preparados con los mejores ingredientes.',
       appetizers: 'Bocas',
       mains: 'Platos Fuertes',
       desserts: 'Postres',
-      drinks: 'Bebidas',
+      drinks: 'Bebidas'
     },
     about: {
-      title: 'Nuestra <span class="text-brand-orange">Historia</span>, Tu Mesa',
-      subtitle: 'Más que un restaurante, somos una familia.',
-      description: 'Desde 1985, La Pollera ha sido un punto de encuentro para amantes de la buena comida. Nuestro compromiso es ofrecer sabores que evocan tradición y calidad, en un ambiente que te hará sentir como en casa.',
+      title: 'Nuestra <span class="text-brand-red">Historia</span>',
+      subtitle: 'Pasión por el sabor y la buena comida',
+      description: 'Desde nuestros inicios, en La Pollera nos hemos dedicado a crear experiencias inolvidables, combinando ingredientes frescos y recetas auténticas en un ambiente familiar y moderno.',
       experience: 'Años de Experiencia',
-      dishes: 'Platos en el Menú',
-      customers: 'Clientes Satisfechos',
+      dishes: 'Platos Únicos',
+      customers: 'Clientes Satisfechos'
     },
     contact: {
       title: 'Contáctanos',
-      subtitle: '¿Tienes alguna pregunta o quieres hacer una reserva? Estamos aquí para ayudarte.',
+      subtitle: 'Estamos aquí para servirte',
       address: 'Dirección',
       phone: 'Teléfono',
-      email: 'Correo Electrónico',
-      hours: 'Horario de Atención',
-      location: 'Encuéntranos Aquí',
-      mapLink: 'Ver en Mapa Completo',
+      email: 'Email',
+      hours: 'Horarios',
+      days: 'Lun-Dom: 11:00 AM - 11:00 PM',
+      viewOnMap: 'Ver en Mapa Completo',
+      location: 'Nuestra Ubicación',
+      exactAddress: '100 metros Oeste del Banco de Costa Rica.',
+      fullAddress: 'Monterrey, San Carlos, Alajuela, Costa Rica.',
     },
     footer: {
-      description: 'El lugar perfecto para disfrutar de la auténtica cocina, en un ambiente cálido y familiar.',
+      description: 'El auténtico sabor que une a todos.',
       quickLinks: 'Enlaces Rápidos',
-      rights: 'Todos los derechos reservados',
+      followUs: 'Síguenos',
+      days: 'Lunes - Domingo',
+      waitingForYou: '¡Te esperamos!',
+      rights: 'Todos los derechos reservados'
     },
     common: {
-      notImplemented: '🚧 ¡Esta función aún no está implementada, pero no te preocupes! ¡Puedes solicitarla en tu próximo mensaje! 🚀',
+      viewDetails: 'Ver Detalles',
+      close: 'Cerrar',
+      price: 'Precio',
       ingredients: 'Ingredientes',
-    },
+      notImplemented: '🚧 Esta función aún no está implementada—¡Muy Pronto! 🚀'
+    }
   },
   en: {
     nav: {
       home: 'Home',
       menu: 'Menu',
-      about: 'About Us',
+      about: 'About',
       contact: 'Contact',
-      reservation: 'Book a Table',
+      reservation: 'Reservation'
     },
     hero: {
       badge: 'The Best Flavor',
-      title: 'La Pollera <span class="gradient-text-orange">Bar & Restaurant</span>',
-      subtitle: 'Where every dish tells a story.',
-      description: 'Immerse yourself in a unique culinary experience, combining traditional recipes with a modern twist. Fresh ingredients and an unparalleled atmosphere await you.',
+      title: 'La Pollera <span class="gradient-text-red">Bar & Restaurant</span>',
+      subtitle: 'Where every bite is a celebration',
+      description: 'Discover our menu full of irresistible dishes, from the crispiest chicken to the juiciest meats.',
       cta: 'View Menu',
-      reserve: 'Make a Reservation',
+      reserve: 'Reserve Table'
     },
     menu: {
-      title: 'Our <span class="text-brand-orange">Exquisite</span> Menu',
-      subtitle: 'A selection of our best dishes, prepared with passion and the freshest ingredients.',
+      title: 'Our <span class="text-brand-red">Menu</span>',
+      subtitle: 'Flavors you will love, prepared with the best ingredients.',
       appetizers: 'Appetizers',
       mains: 'Main Courses',
       desserts: 'Desserts',
-      drinks: 'Drinks',
+      drinks: 'Drinks'
     },
     about: {
-      title: 'Our <span class="text-brand-orange">History</span>, Your Table',
-      subtitle: 'More than a restaurant, we are a family.',
-      description: 'Since 1985, La Pollera has been a meeting point for lovers of good food. Our commitment is to offer flavors that evoke tradition and quality, in an atmosphere that will make you feel at home.',
+      title: 'Our <span class="text-brand-red">Story</span>',
+      subtitle: 'Passion for flavor and good food',
+      description: 'Since our beginning, at La Pollera we have dedicated ourselves to creating unforgettable experiences, combining fresh ingredients and authentic recipes in a family and modern atmosphere.',
       experience: 'Years of Experience',
-      dishes: 'Dishes on the Menu',
-      customers: 'Satisfied Customers',
+      dishes: 'Unique Dishes',
+      customers: 'Satisfied Customers'
     },
     contact: {
       title: 'Contact Us',
-      subtitle: 'Do you have any questions or want to make a reservation? We are here to help you.',
+      subtitle: 'We are here to serve you',
       address: 'Address',
       phone: 'Phone',
       email: 'Email',
-      hours: 'Opening Hours',
-      location: 'Find Us Here',
-      mapLink: 'View on Full Map',
+      hours: 'Hours',
+      days: 'Mon-Sun: 11:00 AM - 11:00 PM',
+      viewOnMap: 'View location on map',
+      location: 'Our Location',
+      exactAddress: 'Located 100 meters west of the Bank of Costa Rica. 100 meters west from the Bank of Costa Rica, in Monterrey.',
+      fullAddress: 'Monterrey, San Carlos, Alajuela, Costa Rica.',
     },
     footer: {
-      description: 'The perfect place to enjoy authentic cuisine in a warm and familiar atmosphere.',
+      description: 'The authentic flavor that unites everyone.',
       quickLinks: 'Quick Links',
-      rights: 'All rights reserved',
+      followUs: 'Follow Us',
+      days: 'Monday - Sunday',
+      waitingForYou: 'We’ll be waiting for you!',
+      rights: 'All rights reserved'
     },
     common: {
-      notImplemented: '🚧 This feature isn\'t implemented yet—but don\'t worry! You can request it in your next prompt! 🚀',
+      viewDetails: 'View Details',
+      close: 'Close',
+      price: 'Price',
       ingredients: 'Ingredients',
-    },
+      notImplemented: '🚧 This feature isn\'t implemented yet— Comming Soon! 🚀'
+    }
   },
   fr: {
     nav: {
@@ -113,14 +132,14 @@ export const translations = {
     },
     hero: {
       badge: 'La Meilleure Saveur',
-      title: 'La Pollera <span class="gradient-text-orange">Bar & Restaurant</span>',
+      title: 'La Pollera <span class="gradient-text-red">Bar & Restaurant</span>',
       subtitle: 'Où chaque bouchée est une célébration',
       description: 'Découvrez notre menu plein de plats irrésistibles, du poulet le plus croustillant aux viandes les plus juteuses.',
       cta: 'Voir le Menu',
       reserve: 'Réserver une Table'
     },
     menu: {
-      title: 'Notre Menu <span class="text-brand-orange">Exquis</span>',
+      title: 'Notre <span class="text-brand-red">Menu</span>',
       subtitle: 'Des saveurs que vous allez adorer, préparées avec les meilleurs ingrédients.',
       appetizers: 'Entrées',
       mains: 'Plats Principaux',
@@ -128,7 +147,7 @@ export const translations = {
       drinks: 'Boissons'
     },
     about: {
-      title: 'Notre <span class="text-brand-orange">Histoire</span>, Votre Table',
+      title: 'Notre <span class="text-brand-red">Histoire</span>',
       subtitle: 'Passion pour la saveur et la bonne nourriture',
       description: 'Depuis nos débuts, à La Pollera, nous nous consacrons à la création d\'expériences inoubliables, en combinant des ingrédients frais et des recettes authentiques dans une atmosphère familiale et moderne.',
       experience: 'Années d\'Expérience',
@@ -142,16 +161,26 @@ export const translations = {
       phone: 'Téléphone',
       email: 'Email',
       hours: 'Horaires',
-      location: 'Notre Emplacement'
+      days: 'Lun-Dim: 11h00 – 23h00',
+      viewOnMap: 'Voir l’emplacement sur la carte',
+      location: 'Notre Emplacement',
+      exactAddress: 'Située à 100 mètres à l’ouest de la Banque du Costa Rica, à Monterrey.',
+      fullAddress: 'Monterrey, San Carlos, Alajuela, Costa Rica.',
     },
     footer: {
       description: 'La saveur authentique qui unit tout le monde.',
       quickLinks: 'Liens Rapides',
+      followUs: 'Suivez-nous',
+      days: 'Lundi - Dimanche',
+      waitingForYou: 'Nous vous attendons!',
       rights: 'Tous droits réservés'
     },
     common: {
-      notImplemented: '🚧 Cette fonctionnalité n\'est pas encore implémentée—mais ne vous inquiétez pas ! Vous pouvez la demander dans votre prochain message ! 🚀',
+      viewDetails: 'Voir les Détails',
+      close: 'Fermer',
+      price: 'Prix',
       ingredients: 'Ingrédients',
+      notImplemented: '🚧 Cette fonctionnalité n\'est pas encore implémentée— À venir! 🚀'
     }
   }
 };
