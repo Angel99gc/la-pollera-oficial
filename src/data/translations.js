@@ -99,7 +99,7 @@ export const translations = {
       address: 'Address',
       phone: 'Phone',
       email: 'Email',
-      hours: 'Hours',
+      hours: 'Opening Hours',
       days: 'Mon-Sun: 11:00 AM - 11:00 PM',
       viewOnMap: 'View location on map',
       location: 'Our Location',
