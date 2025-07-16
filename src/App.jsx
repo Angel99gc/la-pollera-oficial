@@ -23,18 +23,18 @@ function App() {
           <meta property="og:title" content="La Pollera Bar y Restaurante" />
           <meta property="og:description" content="El mejor sabor y ambiente en un solo lugar." />
           <meta property="og:type" content="website" />
-          <link rel="canonical" href="https://lapollera.com" />
+          {/* <link rel="canonical" href="https://lapollera.com" /> */}
         </Helmet>
 
         <Header />
-        
+
         <main>
           <Hero />
           <MenuSection />
           <AboutSection />
           <ContactSection />
         </main>
-        
+
         <Footer />
         <Toaster />
       </div>
