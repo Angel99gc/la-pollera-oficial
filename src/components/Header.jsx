@@ -47,7 +47,7 @@ const Header = () => {
             className="flex items-center space-x-2 cursor-pointer transition-transform duration-300 hover:scale-105"
           >
             {/* Cambiar a logo oficial y hacer redondo. */}
-            <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/79257f20-aa13-454e-9ca7-57fabbfefedb/e3928dd534ee3db168a7710943a22bfc.jpg" alt="La Pollera Logo" className="w-14 h-14" />
+            <img src="Logo.png" alt="La Pollera Logo" className="w-14 h-14" />
             <span className={`font-display text-xl font-bold text-white`}>
               La Pollera
             </span>
