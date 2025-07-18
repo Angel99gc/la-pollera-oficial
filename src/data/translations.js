@@ -22,6 +22,7 @@ export const translations = {
       appetizers: 'Bocas',
       mains: 'Platos Fuertes',
       desserts: 'Postres',
+      foods: 'Comidas',
       drinks: 'Bebidas'
     },
     about: {
@@ -83,6 +84,7 @@ export const translations = {
       appetizers: 'Appetizers',
       mains: 'Main Courses',
       desserts: 'Desserts',
+      foods: 'Foods',
       drinks: 'Drinks'
     },
     about: {
@@ -144,6 +146,7 @@ export const translations = {
       appetizers: 'Entrées',
       mains: 'Plats Principaux',
       desserts: 'Desserts',
+      foods: 'Repas',
       drinks: 'Boissons'
     },
     about: {
