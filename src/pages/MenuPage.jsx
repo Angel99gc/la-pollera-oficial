@@ -69,7 +69,7 @@ const MenuPage = () => {
     setCartItems([...cartItems, item]);
   };
 
-
+console.log(!activeSubCategory)
 
   return (
     <>
@@ -119,7 +119,7 @@ const MenuPage = () => {
         <div className="grid md:grid-cols-4 gap-8 ">
           <div className="md:col-span-1">
             <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
-              <h2 className="text-xl font-semibold mb-4">Menu</h2>
+              <h2 className="text-xl font-semibold mb-4">{ t.nav.menu}</h2>
               <div className="space-y-4">
                 {Object.entries(menuData).map(([category, subcategories]) => (
                   <div key={category} className="space-y-2">
@@ -146,14 +146,22 @@ const MenuPage = () => {
           </div>
 
           <div className="md:col-span-3">
-          {   
-            !!activeSubCategory &&
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {menuData[activeCategory][activeSubCategory].items.map((item, index) => (
-                <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
-                ))}
-              </div>
-          }
+              {
+                !activeSubCategory ?
+                Object.keys(menuData[activeCategory]).map( subCategoryKey => menuData[activeCategory][subCategoryKey].items.map( (item, index) => {
+                    return  <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                  })
+                )
+                
+                :menuData[activeCategory][activeSubCategory].items.map((item, index) => (
+              <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+              ))
+                
+              }
+              
+            </div>
+        
           </div>
         </div>
 
