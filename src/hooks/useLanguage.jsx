@@ -23,6 +23,10 @@ export function LanguageProvider({ children }) {
 
   const t = translations[language] || translations.es;
 
+
+
+  // const getWord = (key, subKey) => t[key][subKey]
+
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}

@@ -1,5 +1,5 @@
 export const menu = {
-  "Foods": {
+  "foods": {
     "Rices": {
       "name": {
         "es": "Arroces",
@@ -1657,7 +1657,7 @@ export const menu = {
       ]
     }
   },
-  "Drinks": {
+  "drinks": {
     "National Beers": {
       "name": {
         "es": "Cervezas Nacionales",

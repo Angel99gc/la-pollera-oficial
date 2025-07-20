@@ -2,86 +2,74 @@ import React, { useState } from "react";
 import { FiMenu, FiShoppingCart, FiX } from "react-icons/fi";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Header from '@/components/Header';
+import { menu as menuData } from '@/data/menu';
+import { useLanguage } from "../hooks/useLanguage";
+import { ProductCard, ProductCard2 } from "../components/ProductCard";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+
 
 const MenuPage = () => {
   const [activeCategory, setActiveCategory] = useState("foods");
-  const [activeSubCategory, setActiveSubCategory] = useState("appetizers");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSubCategory, setActiveSubCategory] = useState("Rices");
   const [cartItems, setCartItems] = useState([]);
-  const [language, setLanguage] = useState("en");
+  const { language, t } = useLanguage();
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  const menuData = {
-    foods: {
-      appetizers: [
-        {
-          id: 1,
-          name: "Bruschetta",
-          description: "Fresh tomatoes, garlic, basil on toasted bread",
-          price: 8.99,
-          image: "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f",
-          dietary: ["vegetarian"]
-        },
-        {
-          id: 2,
-          name: "Calamari",
-          description: "Crispy fried squid with marinara sauce",
-          price: 12.99,
-          image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
-          dietary: ["seafood"]
-        }
-      ],
-      mainCourses: [
-        {
-          id: 3,
-          name: "Ribeye Steak",
-          description: "12oz premium cut with roasted vegetables",
-          price: 32.99,
-          image: "https://images.unsplash.com/photo-1546964124-0cce460f38ef",
-          dietary: ["gluten-free"]
-        }
-      ]
-    },
-    drinks: {
-      softDrinks: [
-        {
-          id: 4,
-          name: "Fresh Lemonade",
-          description: "House-made with real lemons",
-          price: 4.99,
-          image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859",
-          dietary: ["vegan"]
-        }
-      ]
-    }
-  };
+  // const menuData = {
+  //   foods: {
+  //     appetizers: [
+  //       {
+  //         id: 1,
+  //         name: "Bruschetta",
+  //         description: "Fresh tomatoes, garlic, basil on toasted bread",
+  //         price: 8.99,
+  //         image: "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f",
+  //         dietary: ["vegetarian"]
+  //       },
+  //       {
+  //         id: 2,
+  //         name: "Calamari",
+  //         description: "Crispy fried squid with marinara sauce",
+  //         price: 12.99,
+  //         image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
+  //         dietary: ["seafood"]
+  //       }
+  //     ],
+  //     mainCourses: [
+  //       {
+  //         id: 3,
+  //         name: "Ribeye Steak",
+  //         description: "12oz premium cut with roasted vegetables",
+  //         price: 32.99,
+  //         image: "https://images.unsplash.com/photo-1546964124-0cce460f38ef",
+  //         dietary: ["gluten-free"]
+  //       }
+  //     ]
+  //   },
+  //   drinks: {
+  //     softDrinks: [
+  //       {
+  //         id: 4,
+  //         name: "Fresh Lemonade",
+  //         description: "House-made with real lemons",
+  //         price: 4.99,
+  //         image: "https://images.unsplash.com/photo-1621263764928-df1444c5e859",
+  //         dietary: ["vegan"]
+  //       }
+  //     ]
+  //   }
+  // };
+
+  const onSelectCategory = (category) => {
+    setActiveSubCategory('')
+    setActiveCategory(category)
+  }
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
   };
 
-  const ProductCard = ({ item }) => (
-    <div className="bg-gray-900 text-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      <img
-        src={item.image}
-        alt={item.name}
-        className="w-full h-48 object-cover"
-        loading="lazy"
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-semibold text-gray-800">{item.name}</h3>
-        <p className="text-white mt-2">{item.description}</p>
-        <div className="flex items-center justify-between mt-4">
-          <span className="text-xl font-bold text-orange-600">${item.price}</span>
-          {/* <button
-            onClick={() => addToCart(item)}
-            className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors duration-300"
-          >
-            Add to Cart
-          </button> */}
-        </div>
-      </div>
-    </div>
-  );
+
 
   return (
     <>
@@ -131,14 +119,14 @@ const MenuPage = () => {
         <div className="grid md:grid-cols-4 gap-8 ">
           <div className="md:col-span-1">
             <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
-              <h2 className="text-xl font-semibold mb-4">Categories</h2>
+              <h2 className="text-xl font-semibold mb-4">Menu</h2>
               <div className="space-y-4">
                 {Object.entries(menuData).map(([category, subcategories]) => (
                   <div key={category} className="space-y-2">
-                    <button onClick={() => setActiveCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
+                    <button onClick={() => onSelectCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
                       ${activeCategory === category ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105" 
                       : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
-                      {category.charAt(0).toUpperCase() + category.slice(1)}
+                      {t.menu[category]}
                     </button>
                     {activeCategory === category && (
                       <div className="ml-4 space-y-1">
@@ -146,7 +134,7 @@ const MenuPage = () => {
                           <button key={subCategory} onClick={() => setActiveSubCategory(subCategory)} className={`w-full text-left px-4 py-1 rounded-lg text-sm ${activeSubCategory === subCategory 
                           ? " bg-gradient-to-r from-brand-orange to-brand-yellow text-white shadow-lg transform scale-105" 
                           : "text-gray-500 hover:bg-orange-50"}`}>
-                            {subCategory.charAt(0).toUpperCase() + subCategory.slice(1)}
+                            {menuData[category][subCategory].name[language]}
                           </button>
                         ))}
                       </div>
@@ -158,11 +146,14 @@ const MenuPage = () => {
           </div>
 
           <div className="md:col-span-3">
+          {   
+            !!activeSubCategory &&
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {menuData[activeCategory][activeSubCategory].map((item) => (
-                <ProductCard key={item.id} item={item} />
-              ))}
-            </div>
+                {menuData[activeCategory][activeSubCategory].items.map((item, index) => (
+                <ProductCard2 key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                ))}
+              </div>
+          }
           </div>
         </div>
 
@@ -207,6 +198,41 @@ const MenuPage = () => {
             </div>
           </div>
         </footer> */}
+        <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
+          <DialogContent className="max-w-2xl bg-gray-800 border-gray-700 text-white">
+            {selectedItem && (
+              <>
+                <DialogHeader>
+                  <DialogTitle className="font-display text-2xl font-bold text-brand-orange">
+                    {selectedItem.name[language]}
+                  </DialogTitle>
+                </DialogHeader>
+
+                <div className="space-y-6">
+                  <div className="relative h-64 rounded-lg overflow-hidden">
+                    <img alt={selectedItem.name[language]} className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-brand-orange">
+                        {selectedItem.price}
+                      </span>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
+                      <p className="text-gray-400 leading-relaxed">
+                        {selectedItem.description[language]}
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
       </section>
 
     </main>

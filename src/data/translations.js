@@ -20,7 +20,7 @@ export const translations = {
       title: 'Nuestro <span class="text-brand-red">Menú</span>',
       subtitle: 'Sabores que te encantarán, preparados con los mejores ingredientes.',
       appetizers: 'Bocas',
-           foods: 'Comidas',
+      foods: 'Comidas',
       drinks: 'Bebidas',
       combos: 'Combos'
     },
