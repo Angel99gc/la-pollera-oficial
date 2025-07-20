@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Header from '@/components/Header';
 import { menu as menuData } from '@/data/menu';
 import { useLanguage } from "../hooks/useLanguage";
-import { ProductCard, ProductCard2 } from "../components/ProductCard";
+import { ProductCard } from "../components/ProductCard";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 
 
@@ -74,7 +74,7 @@ const MenuPage = () => {
   return (
     <>
     <main>
-      <section id="FullMenu" className="relative min-h-screen flex items-start justify-center overflow-hidden pt-20">
+      <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden pt-20">
         {/* <header className="bg-white shadow-md">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
@@ -150,7 +150,7 @@ const MenuPage = () => {
             !!activeSubCategory &&
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menuData[activeCategory][activeSubCategory].items.map((item, index) => (
-                <ProductCard2 key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
                 ))}
               </div>
           }

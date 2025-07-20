@@ -42,7 +42,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               {/** TODO: Imagen redonda y cambiar a logo oficial */}
-              <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/79257f20-aa13-454e-9ca7-57fabbfefedb/e3928dd534ee3db168a7710943a22bfc.jpg" alt="La Pollera Logo" className="w-16 h-16" />
+              <img src="Logo.png" alt="La Pollera Logo" className="w-16 h-16" />
               <span className="font-display text-2xl font-bold">
                 La Pollera
               </span>

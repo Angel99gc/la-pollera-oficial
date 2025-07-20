@@ -3,7 +3,7 @@ import { FaEye } from 'react-icons/fa';
 import { useLanguage } from '@/hooks/useLanguage';
 import { menu } from '@/data/menu';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { ProductCard2 } from './ProductCard';
+import { ProductCard } from './ProductCard';
 
 const MenuSection = () => {
   const { language, t } = useLanguage();
@@ -15,7 +15,7 @@ const MenuSection = () => {
   const categories = [
     { key: 'foods', label: t.menu.foods },
     { key: 'drinks', label: t.menu.drinks },
-    // { key: 'Ofertas', label: t.menu.drinks }// TODO: FALTA AGREGAR COMBOS
+    { key: 'Platillos favoritos', label: t.menu.favorites }// TODO: FALTA AGREGAR PLATILLOS FAVORITOS
 
   ];
 
@@ -86,7 +86,7 @@ const MenuSection = () => {
 
             !!activeSubCategory ?
               menu[activeCategory][activeSubCategory].items?.map((item, index) => (
-                <ProductCard2 key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
               ))
               : <></>
           }

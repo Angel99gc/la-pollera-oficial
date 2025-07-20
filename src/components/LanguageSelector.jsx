@@ -8,8 +8,8 @@ const LanguageSelector = () => {
 
   const languages = [
     { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'en', name: 'English', flag: '🇺🇸' }
-    // { code: 'fr', name: 'Français', flag: '🇫🇷' }
+    { code: 'en', name: 'English', flag: '🇺🇸' },
+    { code: 'fr', name: 'Français', flag: '🇫🇷' } // TODO: FALTA AGREGAR TRADUCIONES
   ];
 
   return (

@@ -22,7 +22,8 @@ export const translations = {
       appetizers: 'Bocas',
       foods: 'Comidas',
       drinks: 'Bebidas',
-      combos: 'Combos'
+      combos: 'Combos',
+      favorites: 'Platillos Favoritos'
     },
     about: {
       title: 'Nuestra <span class="text-brand-red">Historia</span>',
@@ -59,7 +60,8 @@ export const translations = {
       price: 'Precio',
       description: 'Descripción',
       ingredients: 'Ingredientes',
-      notImplemented: '🚧 Esta función aún no está implementada—¡Muy Pronto! 🚀'
+      notImplemented: '🚧 Esta función aún no está implementada—¡Muy Pronto! 🚀',
+      notImage: "Imagen no disponible"
     }
   },
   en: {
@@ -84,9 +86,10 @@ export const translations = {
       appetizers: 'Appetizers',
       mains: 'Main Courses',
       desserts: 'Desserts',
-               foods: 'Foods',
+      foods: 'Foods',
       drinks: 'Drinks',
-      combos: 'Combos'
+      combos: 'Combos',
+      favorites: 'Favorite Dishes'
     },
     about: {
       title: 'Our <span class="text-brand-red">Story</span>',
@@ -123,7 +126,8 @@ export const translations = {
       price: 'Price',
       description: 'Description',
       ingredients: 'Ingredients',
-      notImplemented: '🚧 This feature isn\'t implemented yet— Comming Soon! 🚀'
+      notImplemented: '🚧 This feature isn\'t implemented yet— Comming Soon! 🚀',
+      notImage: "No image available"
     }
   },
   fr: {
@@ -151,7 +155,8 @@ export const translations = {
       desserts: 'Desserts',
       foods: 'Repas',
       drinks: 'Boissons',
-      combos: 'Combos'
+      combos: 'Combos',
+      favorites: 'Plats Préférés'
     },
     about: {
       title: 'Notre <span class="text-brand-red">Histoire</span>',
@@ -188,7 +193,8 @@ export const translations = {
       price: 'Prix',
       description: 'Description',
       ingredients: 'Ingrédients',
-      notImplemented: '🚧 Cette fonctionnalité n\'est pas encore implémentée— À venir! 🚀'
+      notImplemented: '🚧 Cette fonctionnalité n\'est pas encore implémentée— À venir! 🚀',
+      notImage: 'Image non disponible'
     }
   }
 };
