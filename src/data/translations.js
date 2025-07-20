@@ -6,7 +6,10 @@ export const translations = {
       menu: 'Menú',
       about: 'Nosotros',
       contact: 'Contacto',
-      reservation: 'Reservar'
+      reservation: 'Reservar',
+      foods: 'Comidas',
+      drinks: 'Bebidas',
+      combos: 'Combos'
     },
     hero: {
       badge: 'El Mejor Sabor',
@@ -20,10 +23,7 @@ export const translations = {
       title: 'Nuestro <span class="text-brand-red">Menú</span>',
       subtitle: 'Sabores que te encantarán, preparados con los mejores ingredientes.',
       appetizers: 'Bocas',
-      mains: 'Platos Fuertes',
-      desserts: 'Postres',
-      foods: 'Comidas',
-      drinks: 'Bebidas'
+      mainDishes: 'Platillos Principales'
     },
     about: {
       title: 'Nuestra <span class="text-brand-red">Historia</span>',
@@ -58,6 +58,7 @@ export const translations = {
       viewDetails: 'Ver Detalles',
       close: 'Cerrar',
       price: 'Precio',
+      description: 'Descripción',
       ingredients: 'Ingredientes',
       notImplemented: '🚧 Esta función aún no está implementada—¡Muy Pronto! 🚀'
     }
@@ -68,7 +69,8 @@ export const translations = {
       menu: 'Menu',
       about: 'About',
       contact: 'Contact',
-      reservation: 'Reservation'
+      reservation: 'Reservation',
+      mainDishes: 'Main Dishes'
     },
     hero: {
       badge: 'The Best Flavor',
@@ -120,6 +122,7 @@ export const translations = {
       viewDetails: 'View Details',
       close: 'Close',
       price: 'Price',
+      description: 'Description',
       ingredients: 'Ingredients',
       notImplemented: '🚧 This feature isn\'t implemented yet— Comming Soon! 🚀'
     }
@@ -130,7 +133,8 @@ export const translations = {
       menu: 'Menu',
       about: 'À Propos',
       contact: 'Contact',
-      reservation: 'Réservation'
+      reservation: 'Réservation',
+      mainDishes: 'Plats Principaux'
     },
     hero: {
       badge: 'La Meilleure Saveur',
@@ -182,6 +186,7 @@ export const translations = {
       viewDetails: 'Voir les Détails',
       close: 'Fermer',
       price: 'Prix',
+      description: 'Description',
       ingredients: 'Ingrédients',
       notImplemented: '🚧 Cette fonctionnalité n\'est pas encore implémentée— À venir! 🚀'
     }

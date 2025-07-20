@@ -1,6 +1,6 @@
 export const menu = {
-  "Foods": [
-    {
+  "Foods": {
+    "Rices": {
       "name": {
         "es": "Arroces",
         "en": "Rices",
@@ -156,7 +156,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Typical Food": {
       "name": {
         "es": "Casado",
         "en": "Typical Food",
@@ -270,7 +270,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Soups": {
       "name": {
         "es": "Sopas",
         "en": "Soups",
@@ -384,7 +384,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Red Meats": {
       "name": {
         "es": "Carnes Rojas",
         "en": "Red Meats",
@@ -498,7 +498,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Bocas": {
       "name": {
         "es": "Bocas",
         "en": "Bocas",
@@ -1053,7 +1053,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Spaguetti": {
       "name": {
         "es": "Pastas",
         "en": "Spaghetti",
@@ -1146,10 +1146,10 @@ export const menu = {
         }
       ]
     },
-    {
+    "Desserts": {
       "name": {
         "es": "Postres",
-        "en": "Postres",
+        "en": "Desserts",
         "fr": ""
       },
       "items": [
@@ -1197,7 +1197,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Fish Dishes": {
       "name": {
         "es": "Pescado",
         "en": "Fish Dishes",
@@ -1437,7 +1437,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Chicken": {
       "name": {
         "es": "Pollo",
         "en": "Chicken",
@@ -1656,12 +1656,12 @@ export const menu = {
         }
       ]
     }
-  ],
-  "Drinks": [
-    {
+  },
+  "Drinks": {
+    "National Beers": {
       "name": {
         "es": "Cervezas Nacionales",
-        "en": "",
+        "en": "National Beers",
         "fr": ""
       },
       "items": [
@@ -1709,10 +1709,10 @@ export const menu = {
         }
       ]
     },
-    {
+    "Premium Beers": {
       "name": {
         "es": "Cervezas Premium",
-        "en": "",
+        "en": "Premium Beers",
         "fr": ""
       },
       "items": [
@@ -1781,10 +1781,10 @@ export const menu = {
         }
       ]
     },
-    {
+    "Cocktails": {
       "name": {
         "es": "Cocteles Preparados",
-        "en": "",
+        "en": "Cocktails",
         "fr": ""
       },
       "items": [
@@ -1852,7 +1852,14 @@ export const menu = {
           }
         }
       ],
-      "Liga de la Casa": [
+    },
+    "Liga de la Casa": {
+      "name": {
+        "es": "Liga de la Casa",
+        "en": "",
+        "fr": ""
+      },
+      "items": [
         {
           "id": 43,
           "name": {
@@ -1896,7 +1903,14 @@ export const menu = {
           }
         }
       ],
-      "Sangria y Vino de la Casa": [
+    },
+    "Sangria y Vino de la Casa": {
+      "name": {
+        "es": "Sangria y Vino de la Casa",
+        "en": "",
+        "fr": ""
+      },
+      "items": [
         {
           "id": 45,
           "name": {
@@ -1941,7 +1955,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Refrescos": {
       "name": {
         "es": "Refrescos",
         "en": "",
@@ -2117,7 +2131,7 @@ export const menu = {
           }
         },
         {
-          "id": 57,
+          "id": 58,
           "name": {
             "es": "Agua Cristal",
             "en": "Agua Cristal",
@@ -2139,7 +2153,7 @@ export const menu = {
         }
       ]
     },
-    {
+    "Trago de la casa": {
       "name": {
         "es": "Trago de la casa",
         "en": "",
@@ -2169,5 +2183,5 @@ export const menu = {
         }
       ]
     }
-  ]
+  }
 }

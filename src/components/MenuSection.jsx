@@ -60,17 +60,17 @@ const MenuSection = () => {
         >
           {
 
-            !!activeCategory ? menu[activeCategory].map(({ name }) => (
+            !!activeCategory ? Object.keys(menu[activeCategory]).map((subcategory) => (
               <button
-                key={name[language]}
-                onClick={() => setActiveSubCategory(name[language])}
+                key={subcategory}
+                onClick={() => setActiveSubCategory(subcategory)}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 
-                  ${activeSubCategory === name[language]
+                  ${activeSubCategory === subcategory
                     ? 'bg-gradient-to-r from-brand-orange to-brand-yellow text-white shadow-lg transform scale-105'
                     : 'bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700'
                   }`}
               >
-                {name[language]}
+                {menu[activeCategory][subcategory].name[language]}
               </button>
             ))
               : <></>
@@ -83,7 +83,7 @@ const MenuSection = () => {
           {
 
             !!activeSubCategory ?
-              menu[activeCategory].find(product => product.name[language] === activeSubCategory).items?.map((item, index) => (
+              menu[activeCategory][activeSubCategory].items?.map((item, index) => (
                 <div
                   key={item.id}
                   data-aos="fade-up" data-aos-delay={index * 50}
@@ -101,7 +101,7 @@ const MenuSection = () => {
                     </button>
 
                     <div className="absolute bottom-4 left-4 bg-brand-orange text-white px-3 py-1 rounded-full font-bold">
-                      {item.price}
+                      ₡{item.price}
                     </div>
                   </div>
 
@@ -143,18 +143,12 @@ const MenuSection = () => {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-white mb-2">Descripción</h4>
+                    <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
                     <p className="text-gray-400 leading-relaxed">
                       {selectedItem.description[language]}
                     </p>
                   </div>
 
-                  <div>
-                    <h4 className="font-semibold text-white mb-2">{t.common.ingredients}</h4>
-                    <p className="text-gray-400">
-                      {selectedItem.ingredients[language]}
-                    </p>
-                  </div>
                 </div>
               </div>
             </>

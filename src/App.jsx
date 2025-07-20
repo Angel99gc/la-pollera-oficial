@@ -1,13 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import MenuSection from '@/components/MenuSection';
-import AboutSection from '@/components/AboutSection';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/hooks/useLanguage';
+import MenuPage from './pages/MenuPage';
+import { LandingPage } from './pages/LandingPage';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 function App() {
   return (
@@ -25,20 +23,16 @@ function App() {
           <meta property="og:type" content="website" />
           {/* <link rel="canonical" href="https://lapollera.com" /> */}
         </Helmet>
-
         <Header />
-
-        <main>
-          <Hero />
-          <MenuSection />
-          <AboutSection />
-          <ContactSection />
-        </main>
-
+{
+  true
+        ? <MenuPage />
+        :<LandingPage />
+ }
         <Footer />
         <Toaster />
       </div>
-    </LanguageProvider>
+    </LanguageProvider >
   );
 }
 

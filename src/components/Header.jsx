@@ -30,10 +30,19 @@ const Header = () => {
 
   const navItems = [
     { key: 'home', label: t.nav.home, id: 'hero' },
-    { key: 'menu', label: t.nav.menu, id: 'menu' },
+    { key: 'mainDishes', label: t.nav.mainDishes, id: 'mainDishes' },
     { key: 'about', label: t.nav.about, id: 'about' },
     { key: 'contact', label: t.nav.contact, id: 'contact' },
+    { key: 'menu', label: t.nav.menu, id: 'menu' }
+
   ];
+
+  // const categoryItems = [
+  //   { key: 'home', label: t.nav.home, id: 'hero' },
+  //   { key: 'foods', label: t.nav.foods, id: 'food' },
+  //   { key: 'drinks', label: t.nav.drinks, id: 'drinks' },
+  //   { key: 'combos', label: t.nav.menu, id: 'combos' },
+  // ]
 
   return (
     <header
