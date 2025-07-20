@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
 import { LanguageProvider } from '@/hooks/useLanguage';
@@ -8,6 +8,12 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 function App() {
+
+
+  const [activeLanding, setActiveLanding] = useState(true)
+
+
+
   return (
     <LanguageProvider>
       <div className="min-h-screen scroll-smooth bg-gray-900 font-sans">
@@ -23,12 +29,13 @@ function App() {
           <meta property="og:type" content="website" />
           {/* <link rel="canonical" href="https://lapollera.com" /> */}
         </Helmet>
-        <Header />
-{
-  true
-        ? <MenuPage />
-        :<LandingPage />
- }
+        
+        <Header viewLanding={setActiveLanding} />
+        {
+          !activeLanding
+            ? <MenuPage />
+            :<LandingPage />
+        }
         <Footer />
         <Toaster />
       </div>

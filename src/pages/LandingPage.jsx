@@ -13,8 +13,6 @@ export const LandingPage = () => {
         <AboutSection />
         <ContactSection />
       </main>
-
-      <Footer />
     </>
   )
 }

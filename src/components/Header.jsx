@@ -4,7 +4,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { useToast } from '@/components/ui/use-toast';
 import LanguageSelector from '@/components/LanguageSelector';
 
-const Header = () => {
+const Header = ({viewLanding}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLanguage();
@@ -19,18 +19,24 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    if(sectionId=='menu'){
+      viewLanding(false)
+    } else{
+      viewLanding(true)
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setIsMenuOpen(false);
+      }
     }
+  
   };
 
 
 
   const navItems = [
     { key: 'home', label: t.nav.home, id: 'hero' },
-    { key: 'mainDishes', label: t.nav.mainDishes, id: 'mainDishes' },
+    { key: 'dishes', label: t.about.dishes, id: 'dishes' },
     { key: 'about', label: t.nav.about, id: 'about' },
     { key: 'contact', label: t.nav.contact, id: 'contact' },
     { key: 'menu', label: t.nav.menu, id: 'menu' }

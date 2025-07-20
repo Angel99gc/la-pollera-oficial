@@ -6,10 +6,7 @@ export const translations = {
       menu: 'Menú',
       about: 'Nosotros',
       contact: 'Contacto',
-      reservation: 'Reservar',
-      foods: 'Comidas',
-      drinks: 'Bebidas',
-      combos: 'Combos'
+      reservation: 'Reservar'
     },
     hero: {
       badge: 'El Mejor Sabor',
@@ -23,7 +20,9 @@ export const translations = {
       title: 'Nuestro <span class="text-brand-red">Menú</span>',
       subtitle: 'Sabores que te encantarán, preparados con los mejores ingredientes.',
       appetizers: 'Bocas',
-      mainDishes: 'Platillos Principales'
+           foods: 'Comidas',
+      drinks: 'Bebidas',
+      combos: 'Combos'
     },
     about: {
       title: 'Nuestra <span class="text-brand-red">Historia</span>',
@@ -69,8 +68,7 @@ export const translations = {
       menu: 'Menu',
       about: 'About',
       contact: 'Contact',
-      reservation: 'Reservation',
-      mainDishes: 'Main Dishes'
+      reservation: 'Reservation'
     },
     hero: {
       badge: 'The Best Flavor',
@@ -86,8 +84,9 @@ export const translations = {
       appetizers: 'Appetizers',
       mains: 'Main Courses',
       desserts: 'Desserts',
-      foods: 'Foods',
-      drinks: 'Drinks'
+               foods: 'Foods',
+      drinks: 'Drinks',
+      combos: 'Combos'
     },
     about: {
       title: 'Our <span class="text-brand-red">Story</span>',
@@ -134,7 +133,7 @@ export const translations = {
       about: 'À Propos',
       contact: 'Contact',
       reservation: 'Réservation',
-      mainDishes: 'Plats Principaux'
+      
     },
     hero: {
       badge: 'La Meilleure Saveur',
@@ -151,7 +150,8 @@ export const translations = {
       mains: 'Plats Principaux',
       desserts: 'Desserts',
       foods: 'Repas',
-      drinks: 'Boissons'
+      drinks: 'Boissons',
+      combos: 'Combos'
     },
     about: {
       title: 'Notre <span class="text-brand-red">Histoire</span>',

@@ -10,6 +10,7 @@ const MenuSection = () => {
   const [activeSubCategory, setActiveSubCategory] = useState('');
   const [selectedItem, setSelectedItem] = useState(null);
 
+
   const categories = [
     { key: 'Foods', label: t.menu.foods },
     { key: 'Drinks', label: t.menu.drinks },
@@ -23,7 +24,7 @@ const MenuSection = () => {
   }
 
   return (
-    <section id="menu" className="py-20 bg-gray-900 text-white">
+    <section id="dishes" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
         <div
           data-aos="fade-up"
