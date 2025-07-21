@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLanguage } from '../hooks/useLanguage';
-import { FaEye } from 'react-icons/fa';
 import NoImageAvailable from './ui/NoImageAvailable';
 
 //TODO: FALTA ACTUALIZAR DESCRIPCION DE MENU, PRECIOS EN DIFERENTES MONEDAS Y ACTUALIZAR IMAGENES
@@ -18,9 +17,9 @@ export const ProductCard = ({item, index, setSelectedItem}) => {
           item.urlImage==='default'
             ?<NoImageAvailable/>
             :<img
-              src={item.urlImage}
+              src={`menu/${item.urlImage}`}
               alt={item.name[language]}
-              className="w-full h-48 object-cover"
+              className="w-full h-64 object-cover"
               loading="lazy"
             />
         // <img alt={item.name[language]} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />

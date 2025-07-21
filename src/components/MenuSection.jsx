@@ -4,6 +4,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { menu } from '@/data/menu';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ProductCard } from './ProductCard';
+import NoImageAvailable from './ui/NoImageAvailable';
 
 const MenuSection = () => {
   const { language, t } = useLanguage();
@@ -105,23 +106,35 @@ const MenuSection = () => {
 
               <div className="space-y-6">
                 <div className="relative h-64 rounded-lg overflow-hidden">
-                  <img alt={selectedItem.name[language]} className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+                       {
+                        selectedItem.urlImage==='default'
+                          ?<NoImageAvailable />
+                          :<img 
+                            alt={selectedItem.name[language]} 
+                            className="w-full h-full object-cover" 
+                            src={`menu/${selectedItem.urlImage}`}
+                          />
+
+                      }
                 </div>
-
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-brand-orange">
-                      {selectedItem.price}
-                    </span>
-                  </div>
-
                   <div>
                     <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
                     <p className="text-gray-400 leading-relaxed">
                       {selectedItem.description[language]}
                     </p>
                   </div>
-
+                  <div className="flex items-center justify-between mt-4">
+                    <div className="flex bg-brand-orange text-white px-3 py-1 rounded-full font-bold mx-auto">
+                      ₡{selectedItem.price}
+                    </div>
+                    {/* <button
+                      onClick={() => addToCart(item)}
+                      className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors duration-300"
+                    >
+                      Add to Cart
+                    </button> */}
+                  </div>
                 </div>
               </div>
             </>

@@ -21,7 +21,7 @@ export const menu = {
           },
           "price": 3800,
           "image": "",
-          "urlImage": "default",
+          "urlImage": "arrozconpollo0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -105,7 +105,7 @@ export const menu = {
           },
           "price": 4800,
           "image": "",
-          "urlImage": "default",
+          "urlImage": "arrozconcamarones0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -146,8 +146,7 @@ export const menu = {
             "fr": ""
           },
           "price": 6200,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "camaronesconarroz0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -176,8 +175,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3500,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "casadoconbistec0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -239,8 +237,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3500,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "casadodepescado0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -260,7 +257,6 @@ export const menu = {
             "fr": ""
           },
           "price": 3500,
-          "image": "",
           "urlImage": "default",
           "ingredients": {
             "es": "",
@@ -425,8 +421,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4800,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "fajistasres0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -539,8 +534,7 @@ export const menu = {
             "fr": ""
           },
           "price": 2800,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "nachos0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -623,8 +617,7 @@ export const menu = {
             "fr": ""
           },
           "price": 2000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "ordenpapas0",
           "ingredients": {
             "es": "",
             "en": "",
@@ -644,8 +637,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "tacos0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -686,8 +678,7 @@ export const menu = {
             "fr": ""
           },
           "price": 2500,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "salchipapas0.jpeg",
           "ingredients": {
             "es": "Salchicha, papas fritas",
             "en": "",
@@ -749,8 +740,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "carneensalsa0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -791,8 +781,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "cevichedepescado0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -938,8 +927,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "dedospescado0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -959,8 +947,7 @@ export const menu = {
             "fr": ""
           },
           "price": 3000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "nuggetsdepollo0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1073,8 +1060,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "spaghettiboloñesa0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1094,8 +1080,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "spaguettialfredo.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1166,8 +1151,7 @@ export const menu = {
             "fr": ""
           },
           "price": 2000,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "crepas0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1217,8 +1201,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4900,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "corvinaalaplancha0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1301,8 +1284,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4900,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "camaronesempanizados0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1457,8 +1439,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4500,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "polloalaplancha0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1584,7 +1565,7 @@ export const menu = {
           },
           "price": 4500,
           "image": "",
-          "urlImage": "default",
+          "urlImage": "fajitasmixta0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",
@@ -1646,8 +1627,7 @@ export const menu = {
             "fr": ""
           },
           "price": 4500,
-          "image": "",
-          "urlImage": "default",
+          "urlImage": "alitas0.jpeg",
           "ingredients": {
             "es": "",
             "en": "",

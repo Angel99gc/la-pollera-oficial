@@ -6,6 +6,7 @@ import { menu as menuData } from '@/data/menu';
 import { useLanguage } from "../hooks/useLanguage";
 import { ProductCard } from "../components/ProductCard";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import NoImageAvailable from "../components/ui/NoImageAvailable";
 
 
 const MenuPage = () => {
@@ -74,7 +75,7 @@ console.log(!activeSubCategory)
   return (
     <>
     <main>
-      <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden pt-20">
+      <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden">
         {/* <header className="bg-white shadow-md">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
@@ -116,7 +117,7 @@ console.log(!activeSubCategory)
           </div>
         </header> */}
 
-        <div className="grid md:grid-cols-4 gap-8 ">
+        <div className="grid md:grid-cols-4 gap-8 px-4 py-20">
           <div className="md:col-span-1">
             <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
               <h2 className="text-xl font-semibold mb-4">{ t.nav.menu}</h2>
@@ -150,7 +151,7 @@ console.log(!activeSubCategory)
               {
                 !activeSubCategory ?
                 Object.keys(menuData[activeCategory]).map( subCategoryKey => menuData[activeCategory][subCategoryKey].items.map( (item, index) => {
-                    return  <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                    return <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
                   })
                 )
                 
@@ -218,23 +219,35 @@ console.log(!activeSubCategory)
 
                 <div className="space-y-6">
                   <div className="relative h-64 rounded-lg overflow-hidden">
-                    <img alt={selectedItem.name[language]} className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+                      {
+                        selectedItem.urlImage==='default'
+                          ?<NoImageAvailable />
+                          :<img 
+                            alt={selectedItem.name[language]} 
+                            className="w-full h-full object-cover" 
+                            src={`menu/${selectedItem.urlImage}`}
+                          />
+
+                      }
                   </div>
-
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-brand-orange">
-                        {selectedItem.price}
-                      </span>
-                    </div>
-
                     <div>
                       <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
                       <p className="text-gray-400 leading-relaxed">
                         {selectedItem.description[language]}
                       </p>
                     </div>
-
+                    <div className="flex items-center justify-between mt-4">
+                      <div className="flex bg-brand-orange text-white px-3 py-1 rounded-full font-bold mx-auto">
+                        ₡{selectedItem.price}
+                      </div>
+                      {/* <button
+                        onClick={() => addToCart(item)}
+                        className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors duration-300"
+                      >
+                        Add to Cart
+                      </button> */}
+                    </div>
                   </div>
                 </div>
               </>
