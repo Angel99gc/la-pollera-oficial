@@ -34,7 +34,7 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path=''
+            path='/la-pollera-oficial'
             element={
               <LandingPage />
             }
@@ -48,7 +48,7 @@ function App() {
           <Route
             path='/*'
             element={
-              <Navigate to={''} />
+              <Navigate to={'/la-pollera-oficial'} />
             }
           />
         </Routes>

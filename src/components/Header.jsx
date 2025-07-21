@@ -25,7 +25,7 @@ const Header = () => {
       navigate('/la-pollera-oficial/menu');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      navigate(``, { state: { scrollToId: sectionId } });
+      navigate(`/la-pollera-oficial`, { state: { scrollToId: sectionId } });
     }
 
   };
