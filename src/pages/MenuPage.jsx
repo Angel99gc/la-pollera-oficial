@@ -70,7 +70,6 @@ const MenuPage = () => {
     setCartItems([...cartItems, item]);
   };
 
-  console.log(!activeSubCategory)
 
   return (
     <>

@@ -1,32 +1,25 @@
 import React, { useState } from 'react';
 import { FaEye } from 'react-icons/fa';
 import { useLanguage } from '@/hooks/useLanguage';
-import { menu } from '@/data/menu';
+import { dishesData } from '@/data/dishesData';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ProductCard } from './ProductCard';
 import NoImageAvailable from './ui/NoImageAvailable';
 
 const DishesSection = () => {
   const { language, t } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState('');
-  const [activeSubCategory, setActiveSubCategory] = useState('');
+  const [activeCategory, setActiveCategory] = useState('recommended');
   const [selectedItem, setSelectedItem] = useState(null);
 
 
   const categories = [
-    { key: 'foods', label: t.menu.foods },
-    { key: 'drinks', label: t.menu.drinks },
-    { key: 'Platillos favoritos', label: t.menu.favorites },// TODO: FALTA AGREGAR PLATILLOS FAVORITOS
-
-    { key: 'Favoritos', label: t.menu.mains },
-    { key: 'Recomendados', label: t.menu.appetizers },
-    { key: 'Combos', label: t.menu.drinks }
-
+    { key: 'recommended', label: t.menu.recommended },
+    { key: 'favorites', label: t.menu.favorites },
+    { key: 'combos', label: t.menu.combos }
   ];
 
   const selectCategory = (category) => {
     setActiveCategory(category)
-    setActiveSubCategory('')
   }
 
   return (
@@ -61,36 +54,14 @@ const DishesSection = () => {
             </button>
           ))}
         </div>
-        <div
-          data-aos="fade-up" data-aos-delay="100"
-          className="flex flex-wrap justify-center mb-12 gap-4"
-        >
-          {
 
-            !!activeCategory ? Object.keys(menu[activeCategory]).map((subcategory) => (
-              <button
-                key={subcategory}
-                onClick={() => setActiveSubCategory(subcategory)}
-                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 
-                  ${activeSubCategory === subcategory
-                    ? 'bg-gradient-to-r from-brand-orange to-brand-yellow text-white shadow-lg transform scale-105'
-                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700'
-                  }`}
-              >
-                {menu[activeCategory][subcategory].name[language]}
-              </button>
-            ))
-              : <></>
-
-          }
-        </div>
         <div
           className="menu-grid"
         >
           {
 
-            !!activeSubCategory ?
-              menu[activeCategory][activeSubCategory].items?.map((item, index) => (
+            !!activeCategory ?
+              dishesData[activeCategory].map((item, index) => (
                 <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
               ))
               : <></>

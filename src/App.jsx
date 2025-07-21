@@ -10,11 +10,6 @@ import { Navigate, Route, Router, Routes } from 'react-router';
 
 function App() {
 
-
-
-
-
-
   return (
     <LanguageProvider>
       <div className="min-h-screen scroll-smooth bg-gray-900 font-sans">
@@ -40,7 +35,7 @@ function App() {
             }
           />
           <Route
-            path='/menu'
+            path='/la-pollera-oficial/menu'
             element={
               <MenuPage />
             }

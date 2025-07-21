@@ -18,6 +18,7 @@ export const LandingPage = () => {
       }
     }
   }, [location]);
+
   return (
     <>
       <main>

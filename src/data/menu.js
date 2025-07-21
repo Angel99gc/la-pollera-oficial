@@ -2163,5 +2163,37 @@ export const menu = {
         }
       ]
     }
+  },
+  "combos": {
+    "Rices": {
+      "name": {
+        "es": "Arroces",
+        "en": "Rices",
+        "fr": ""
+      },
+      "items": [
+        {
+          "id": 1,
+          "name": {
+            "es": "Arroz con Pollo",
+            "en": "Chicken Rice",
+            "fr": "Riz au Poulet"
+          },
+          "description": {
+            "es": "",
+            "en": "",
+            "fr": ""
+          },
+          "price": 3800,
+          "image": "",
+          "urlImage": "arrozconpollo0.jpeg",
+          "ingredients": {
+            "es": "",
+            "en": "",
+            "fr": ""
+          }
+        }
+      ]
+    }
   }
 }

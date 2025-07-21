@@ -23,6 +23,7 @@ export const translations = {
       foods: 'Comidas',
       drinks: 'Bebidas',
       combos: 'Combos',
+      recommended: 'Platillos Recomendados',
       favorites: 'Platillos Favoritos'
     },
     about: {
@@ -89,6 +90,7 @@ export const translations = {
       foods: 'Foods',
       drinks: 'Drinks',
       combos: 'Combos',
+      recommended: 'Recommended Dishes',
       favorites: 'Favorite Dishes'
     },
     about: {
@@ -137,7 +139,7 @@ export const translations = {
       about: 'À Propos',
       contact: 'Contact',
       reservation: 'Réservation',
-      
+
     },
     hero: {
       badge: 'La Meilleure Saveur',
@@ -156,6 +158,7 @@ export const translations = {
       foods: 'Repas',
       drinks: 'Boissons',
       combos: 'Combos',
+      recommended: 'Plats Recommandés',
       favorites: 'Plats Préférés'
     },
     about: {

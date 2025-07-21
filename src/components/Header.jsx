@@ -27,7 +27,7 @@ const Header = () => {
     } else {
       navigate(`/la-pollera-oficial`, { state: { scrollToId: sectionId } });
     }
-
+    setIsMenuOpen(false)
   };
 
 
@@ -38,7 +38,6 @@ const Header = () => {
     { key: 'about', label: t.nav.about, id: 'about' },
     { key: 'contact', label: t.nav.contact, id: 'contact' },
     { key: 'menu', label: t.nav.menu, id: 'menu' }
-
   ];
 
   // const categoryItems = [
@@ -50,11 +49,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all  duration-300 ${isScrolled ? 'bg-gray-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
         }`}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 ">
+        <div className="flex items-center justify-between h-20 ">
           <button
             onClick={() => scrollToSection('hero')}
             className="flex items-center space-x-2 cursor-pointer transition-transform duration-300 hover:scale-105"
@@ -108,7 +107,7 @@ const Header = () => {
               {navItems.map((item) => (
                 <button
                   key={item.key}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => navigateToSection(item.id)}
                   className="block w-full text-left px-6 py-3 text-gray-200 hover:bg-gray-700 transition-colors duration-200"
                 >
                   {item.label}
