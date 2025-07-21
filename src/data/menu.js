@@ -331,7 +331,7 @@ export const menu = {
             "fr": "Lanières de viande sautées avec légumes. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4800,
-          "urlImage": "fajistasres0.jpeg"
+          "urlImage": "fajitasres0.jpeg"
         },
         {
           "id": 20,
