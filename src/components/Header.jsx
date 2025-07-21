@@ -3,12 +3,14 @@ import { FaBars, FaTimes, FaPhone } from 'react-icons/fa';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useToast } from '@/components/ui/use-toast';
 import LanguageSelector from '@/components/LanguageSelector';
+import { useNavigate } from 'react-router';
 
-const Header = ({viewLanding}) => {
+const Header = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useLanguage();
-  const { toast } = useToast();
+  // const { toast } = useToast();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,18 +20,14 @@ const Header = ({viewLanding}) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
-    if(sectionId=='menu'){
-      viewLanding(false)
-    } else{
-      viewLanding(true)
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        setIsMenuOpen(false);
-      }
+  const navigateToSection = (sectionId) => {
+    if (sectionId == 'menu') {
+      navigate('/la-pollera-oficial/menu');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate(``, { state: { scrollToId: sectionId } });
     }
-  
+
   };
 
 
@@ -72,7 +70,7 @@ const Header = ({viewLanding}) => {
             {navItems.map((item) => (
               <button
                 key={item.key}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => navigateToSection(item.id)}
                 className={`font-medium transition-colors duration-300 text-gray-200 hover:text-brand-orange`}
               >
                 {item.label}

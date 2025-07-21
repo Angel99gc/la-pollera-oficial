@@ -70,13 +70,13 @@ const MenuPage = () => {
     setCartItems([...cartItems, item]);
   };
 
-console.log(!activeSubCategory)
+  console.log(!activeSubCategory)
 
   return (
     <>
-    <main>
-      <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden">
-        {/* <header className="bg-white shadow-md">
+      <main>
+        <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden">
+          {/* <header className="bg-white shadow-md">
           <div className="container mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
@@ -117,56 +117,56 @@ console.log(!activeSubCategory)
           </div>
         </header> */}
 
-        <div className="grid md:grid-cols-4 gap-8 px-4 py-20">
-          <div className="md:col-span-1">
-            <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
-              <h2 className="text-xl font-semibold mb-4">{ t.nav.menu}</h2>
-              <div className="space-y-4">
-                {Object.entries(menuData).map(([category, subcategories]) => (
-                  <div key={category} className="space-y-2">
-                    <button onClick={() => onSelectCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
-                      ${activeCategory === category ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105" 
-                      : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
-                      {t.menu[category]}
-                    </button>
-                    {activeCategory === category && (
-                      <div className="ml-4 space-y-1">
-                        {Object.keys(subcategories).map((subCategory) => (
-                          <button key={subCategory} onClick={() => setActiveSubCategory(subCategory)} className={`w-full text-left px-4 py-1 rounded-lg text-sm ${activeSubCategory === subCategory 
-                          ? " bg-gradient-to-r from-brand-orange to-brand-yellow text-white shadow-lg transform scale-105" 
-                          : "text-gray-500 hover:bg-orange-50"}`}>
-                            {menuData[category][subCategory].name[language]}
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
+          <div className="grid md:grid-cols-4 gap-8 px-4 py-20">
+            <div className="md:col-span-1">
+              <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
+                <h2 className="text-xl font-semibold mb-4">{t.nav.menu}</h2>
+                <div className="space-y-4">
+                  {Object.entries(menuData).map(([category, subcategories]) => (
+                    <div key={category} className="space-y-2">
+                      <button onClick={() => onSelectCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
+                      ${activeCategory === category ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105"
+                          : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
+                        {t.menu[category]}
+                      </button>
+                      {activeCategory === category && (
+                        <div className="ml-4 space-y-1">
+                          {Object.keys(subcategories).map((subCategory) => (
+                            <button key={subCategory} onClick={() => setActiveSubCategory(subCategory)} className={`w-full text-left px-4 py-1 rounded-lg text-sm ${activeSubCategory === subCategory
+                              ? " bg-gradient-to-r from-brand-orange to-brand-yellow text-white shadow-lg transform scale-105"
+                              : "text-gray-500 hover:bg-orange-50"}`}>
+                              {menuData[category][subCategory].name[language]}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="md:col-span-3">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {
-                !activeSubCategory ?
-                Object.keys(menuData[activeCategory]).map( subCategoryKey => menuData[activeCategory][subCategoryKey].items.map( (item, index) => {
-                    return <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
-                  })
-                )
-                
-                :menuData[activeCategory][activeSubCategory].items.map((item, index) => (
-              <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
-              ))
-                
-              }
-              
+            <div className="md:col-span-3">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {
+                  !activeSubCategory ?
+                    Object.keys(menuData[activeCategory]).map(subCategoryKey => menuData[activeCategory][subCategoryKey].items.map((item, index) => {
+                      return <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                    })
+                    )
+
+                    : menuData[activeCategory][activeSubCategory].items.map((item, index) => (
+                      <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                    ))
+
+                }
+
+              </div>
+
             </div>
-        
           </div>
-        </div>
 
-        {/* <footer className="bg-gray-800 text-white mt-12">
+          {/* <footer className="bg-gray-800 text-white mt-12">
           <div className="container mx-auto px-4 py-8">
             <div className="grid md:grid-cols-4 gap-8">
               <div>
@@ -207,58 +207,58 @@ console.log(!activeSubCategory)
             </div>
           </div>
         </footer> */}
-        <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
-          <DialogContent className="max-w-2xl bg-gray-800 border-gray-700 text-white">
-            {selectedItem && (
-              <>
-                <DialogHeader>
-                  <DialogTitle className="font-display text-2xl font-bold text-brand-orange">
-                    {selectedItem.name[language]}
-                  </DialogTitle>
-                </DialogHeader>
+          <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
+            <DialogContent className="max-w-2xl bg-gray-800 border-gray-700 text-white">
+              {selectedItem && (
+                <>
+                  <DialogHeader>
+                    <DialogTitle className="font-display text-2xl font-bold text-brand-orange">
+                      {selectedItem.name[language]}
+                    </DialogTitle>
+                  </DialogHeader>
 
-                <div className="space-y-6">
-                  <div className="relative h-64 rounded-lg overflow-hidden">
+                  <div className="space-y-6">
+                    <div className="relative h-64 rounded-lg overflow-hidden">
                       {
-                        selectedItem.urlImage==='default'
-                          ?<NoImageAvailable />
-                          :<img 
-                            alt={selectedItem.name[language]} 
-                            className="w-full h-full object-cover" 
+                        selectedItem.urlImage === 'default'
+                          ? <NoImageAvailable />
+                          : <img
+                            alt={selectedItem.name[language]}
+                            className="w-full h-full object-cover"
                             src={`menu/${selectedItem.urlImage}`}
                           />
 
                       }
-                  </div>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
-                      <p className="text-gray-400 leading-relaxed">
-                        {selectedItem.description[language]}
-                      </p>
                     </div>
-                    <div className="flex items-center justify-between mt-4">
-                      <div className="flex bg-brand-orange text-white px-3 py-1 rounded-full font-bold mx-auto">
-                        ₡{selectedItem.price}
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
+                        <p className="text-gray-400 leading-relaxed">
+                          {selectedItem.description[language]}
+                        </p>
                       </div>
-                      {/* <button
+                      <div className="flex items-center justify-between mt-4">
+                        <div className="flex bg-brand-orange text-white px-3 py-1 rounded-full font-bold mx-auto">
+                          ₡{selectedItem.price}
+                        </div>
+                        {/* <button
                         onClick={() => addToCart(item)}
                         className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors duration-300"
                       >
                         Add to Cart
                       </button> */}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </>
-            )}
-          </DialogContent>
-        </Dialog>
-      </section>
+                </>
+              )}
+            </DialogContent>
+          </Dialog>
+        </section>
 
-    </main>
-  
-        </>
+      </main>
+
+    </>
   );
 };
 

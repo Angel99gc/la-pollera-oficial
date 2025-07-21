@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { ProductCard } from './ProductCard';
 import NoImageAvailable from './ui/NoImageAvailable';
 
-const MenuSection = () => {
+const DishesSection = () => {
   const { language, t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('');
   const [activeSubCategory, setActiveSubCategory] = useState('');
@@ -16,7 +16,11 @@ const MenuSection = () => {
   const categories = [
     { key: 'foods', label: t.menu.foods },
     { key: 'drinks', label: t.menu.drinks },
-    { key: 'Platillos favoritos', label: t.menu.favorites }// TODO: FALTA AGREGAR PLATILLOS FAVORITOS
+    { key: 'Platillos favoritos', label: t.menu.favorites },// TODO: FALTA AGREGAR PLATILLOS FAVORITOS
+
+    { key: 'Favoritos', label: t.menu.mains },
+    { key: 'Recomendados', label: t.menu.appetizers },
+    { key: 'Combos', label: t.menu.drinks }
 
   ];
 
@@ -87,7 +91,7 @@ const MenuSection = () => {
 
             !!activeSubCategory ?
               menu[activeCategory][activeSubCategory].items?.map((item, index) => (
-                <ProductCard key={'ProductCard'+index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
               ))
               : <></>
           }
@@ -106,16 +110,16 @@ const MenuSection = () => {
 
               <div className="space-y-6">
                 <div className="relative h-64 rounded-lg overflow-hidden">
-                       {
-                        selectedItem.urlImage==='default'
-                          ?<NoImageAvailable />
-                          :<img 
-                            alt={selectedItem.name[language]} 
-                            className="w-full h-full object-cover" 
-                            src={`menu/${selectedItem.urlImage}`}
-                          />
+                  {
+                    selectedItem.urlImage === 'default'
+                      ? <NoImageAvailable />
+                      : <img
+                        alt={selectedItem.name[language]}
+                        className="w-full h-full object-cover"
+                        src={`menu/${selectedItem.urlImage}`}
+                      />
 
-                      }
+                  }
                 </div>
                 <div className="space-y-4">
                   <div>
@@ -145,4 +149,4 @@ const MenuSection = () => {
   );
 };
 
-export default MenuSection;
+export default DishesSection;

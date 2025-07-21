@@ -86,7 +86,7 @@ const Hero = () => {
             >
               {t.hero.cta}
             </Button>
-            <a
+            {/* <a
               target='_blank'
               href='tel:+50624780213'
             >
@@ -97,15 +97,15 @@ const Hero = () => {
               >
                 {t.hero.reserve}
               </Button>
-            </a>
+            </a> */}
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        {/* <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce"></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

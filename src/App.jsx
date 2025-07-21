@@ -6,11 +6,12 @@ import MenuPage from './pages/MenuPage';
 import { LandingPage } from './pages/LandingPage';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import { Navigate, Route, Router, Routes } from 'react-router';
 
 function App() {
 
 
-  const [activeLanding, setActiveLanding] = useState(true)
+
 
 
 
@@ -29,13 +30,29 @@ function App() {
           <meta property="og:type" content="website" />
           {/* <link rel="canonical" href="https://lapollera.com" /> */}
         </Helmet>
-        
-        <Header viewLanding={setActiveLanding} />
-        {
-          !activeLanding
-            ? <MenuPage />
-            :<LandingPage />
-        }
+
+        <Header />
+        <Routes>
+          <Route
+            path=''
+            element={
+              <LandingPage />
+            }
+          />
+          <Route
+            path='/menu'
+            element={
+              <MenuPage />
+            }
+          />
+          <Route
+            path='/*'
+            element={
+              <Navigate to={''} />
+            }
+          />
+        </Routes>
+
         <Footer />
         <Toaster />
       </div>
