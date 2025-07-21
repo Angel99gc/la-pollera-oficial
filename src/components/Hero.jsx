@@ -3,16 +3,15 @@ import { FaUtensils, FaStar } from 'react-icons/fa';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useToast } from '@/components/ui/use-toast';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router';
 
 const Hero = () => {
   const { t } = useLanguage();
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const scrollToMenu = () => {
-    const menuSection = document.getElementById('menu');
-    if (menuSection) {
-      menuSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate('/la-pollera-oficial/menu')
   };
 
 

@@ -57,24 +57,24 @@ export const dishesData = {
       ingredients: { es: 'Alitas de pollo, salsa BBQ o picante, aderezo', en: 'Chicken wings, BBQ or hot sauce, dressing', fr: 'Ailes de poulet, sauce BBQ ou piquante, vinaigrette' }
     }
   ],
-  combos: [
-    {
-      id: 10,
-      name: { es: 'Cerveza Imperial', en: 'Imperial Beer', fr: 'Bière Imperial' },
-      description: { es: 'La cerveza de Costa Rica, refrescante y dorada.', en: 'The beer of Costa Rica, refreshing and golden.', fr: 'La bière du Costa Rica, rafraîchissante et dorée.' },
-      price: '1350',
-      image: 'A cold bottle of Imperial beer with condensation',
-      urlImage: 'default',
-      ingredients: { es: 'Agua, malta de cebada, lúpulo', en: 'Water, barley malt, hops', fr: 'Eau, malt d\'orge, houblon' }
-    },
-    {
-      id: 11,
-      name: { es: 'Sangría de la Casa', en: 'House Sangria', fr: 'Sangria Maison' },
-      description: { es: 'Refrescante sangría preparada con vino y frutas frescas.', en: 'Refreshing sangria prepared with wine and fresh fruits.', fr: 'Sangria rafraîchissante préparée avec du vin et des fruits frais.' },
-      price: '1500',
-      image: 'A glass of red sangria filled with chopped fruits and ice',
-      urlImage: 'default',
-      ingredients: { es: 'Vino tinto, frutas, licor, soda', en: 'Red wine, fruits, liquor, soda', fr: 'Vin rouge, fruits, liqueur, soda' }
-    }
-  ]
+  // combos: [
+  //   {
+  //     id: 10,
+  //     name: { es: 'Cerveza Imperial', en: 'Imperial Beer', fr: 'Bière Imperial' },
+  //     description: { es: 'La cerveza de Costa Rica, refrescante y dorada.', en: 'The beer of Costa Rica, refreshing and golden.', fr: 'La bière du Costa Rica, rafraîchissante et dorée.' },
+  //     price: '1350',
+  //     image: 'A cold bottle of Imperial beer with condensation',
+  //     urlImage: 'default',
+  //     ingredients: { es: 'Agua, malta de cebada, lúpulo', en: 'Water, barley malt, hops', fr: 'Eau, malt d\'orge, houblon' }
+  //   },
+  //   {
+  //     id: 11,
+  //     name: { es: 'Sangría de la Casa', en: 'House Sangria', fr: 'Sangria Maison' },
+  //     description: { es: 'Refrescante sangría preparada con vino y frutas frescas.', en: 'Refreshing sangria prepared with wine and fresh fruits.', fr: 'Sangria rafraîchissante préparée avec du vin et des fruits frais.' },
+  //     price: '1500',
+  //     image: 'A glass of red sangria filled with chopped fruits and ice',
+  //     urlImage: 'default',
+  //     ingredients: { es: 'Vino tinto, frutas, licor, soda', en: 'Red wine, fruits, liquor, soda', fr: 'Vin rouge, fruits, liqueur, soda' }
+  //   }
+  // ]
 };

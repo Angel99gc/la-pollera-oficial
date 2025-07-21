@@ -3,7 +3,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import NoImageAvailable from './ui/NoImageAvailable';
 
 //TODO: FALTA ACTUALIZAR DESCRIPCION DE MENU, PRECIOS EN DIFERENTES MONEDAS Y ACTUALIZAR IMAGENES
-export const ProductCard = ({item, index, setSelectedItem}) => {
+export const ProductCard = ({ item, index, setSelectedItem, subCategory }) => {
   const { language, t } = useLanguage();
   return (
     <button
@@ -14,15 +14,15 @@ export const ProductCard = ({item, index, setSelectedItem}) => {
     >
       <div className="relative h-64 overflow-hidden">
         {
-          item.urlImage==='default'
-            ?<NoImageAvailable/>
-            :<img
+          item.urlImage === 'default'
+            ? <NoImageAvailable />
+            : <img
               src={`menu/${item.urlImage}`}
               alt={item.name[language]}
               className="w-full h-64 object-cover"
               loading="lazy"
             />
-        // <img alt={item.name[language]} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+          // <img alt={item.name[language]} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
 
         }
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -34,7 +34,7 @@ export const ProductCard = ({item, index, setSelectedItem}) => {
           <FaEye className="w-5 h-5 text-gray-700" />
         </button> */}
 
-    
+
       </div>
 
       <div className="p-6">
@@ -43,6 +43,14 @@ export const ProductCard = ({item, index, setSelectedItem}) => {
         </h3>
         <p className="text-gray-400 leading-relaxed">
           {item.description[language]}
+
+          {
+            (subCategory === "Red Meats" || subCategory === "Chicken") &&
+            <>
+              <br />
+              {t.menu.accompaniments[language]}
+            </>
+          }
         </p>
         <div className="flex items-center justify-between mt-4">
           <div className="flex bg-brand-orange text-white px-3 py-1 rounded-full font-bold mx-auto">

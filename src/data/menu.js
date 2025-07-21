@@ -15,18 +15,13 @@ export const menu = {
             "fr": "Riz au Poulet"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Delicioso arroz sazonado acompañado de trozos jugosos de pollo.",
+            "en": "Delicious seasoned rice served with juicy pieces of chicken.",
+            "fr": "Délicieux riz assaisonné accompagné de morceaux de poulet juteux."
           },
           "price": 3800,
           "image": "",
-          "urlImage": "arrozconpollo0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "arrozconpollo0.jpeg"
         },
         {
           "id": 2,
@@ -36,18 +31,13 @@ export const menu = {
             "fr": "Riz Cantonais"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Arroz salteado al estilo oriental con vegetales y jamón.",
+            "en": "Stir-fried rice with vegetables and ham in oriental style.",
+            "fr": "Riz sauté à la manière orientale avec des légumes et du jambon."
           },
           "price": 4200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 3,
@@ -57,18 +47,13 @@ export const menu = {
             "fr": "Riz Frit au Porc"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Arroz frito con trozos de cerdo sazonados y vegetales.",
+            "en": "Fried rice with seasoned pork chunks and vegetables.",
+            "fr": "Riz frit avec morceaux de porc assaisonnés et légumes."
           },
           "price": 3600,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 4,
@@ -78,18 +63,13 @@ export const menu = {
             "fr": "Riz aux Fruits de Mer"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Arroz cocinado con una mezcla de mariscos frescos.",
+            "en": "Rice cooked with a mix of fresh seafood.",
+            "fr": "Riz cuisiné avec un mélange de fruits de mer frais."
           },
           "price": 4200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 5,
@@ -99,18 +79,13 @@ export const menu = {
             "fr": "Riz aux Crevettes"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Arroz salteado con camarones jugosos y vegetales frescos.",
+            "en": "Stir-fried rice with juicy shrimp and fresh vegetables.",
+            "fr": "Riz sauté avec des crevettes juteuses et des légumes frais."
           },
           "price": 4800,
           "image": "",
-          "urlImage": "arrozconcamarones0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "arrozconcamarones0.jpeg"
         },
         {
           "id": 6,
@@ -120,18 +95,13 @@ export const menu = {
             "fr": "Riz aux Calmars"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Arroz aromático con calamares tiernos en su punto.",
+            "en": "Aromatic rice with perfectly tender squid.",
+            "fr": "Riz aromatique avec des calmars tendres à souhait."
           },
           "price": 3800,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 7,
@@ -141,17 +111,12 @@ export const menu = {
             "fr": "Plus de Crevettes avec Riz"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Una generosa porción de camarones sobre arroz sazonado.",
+            "en": "A generous portion of shrimp served over seasoned rice.",
+            "fr": "Une portion généreuse de crevettes sur du riz assaisonné."
           },
           "price": 6200,
-          "urlImage": "camaronesconarroz0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "camaronesconarroz0.jpeg"
         }
       ]
     },
@@ -170,17 +135,12 @@ export const menu = {
             "fr": "Steak de Boeuf"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Delicioso bistec acompañado de arroz, frijoles y ensalada.",
+            "en": "Delicious beef steak served with rice, beans, and salad.",
+            "fr": "Délicieux steak de boeuf accompagné de riz, haricots et salade."
           },
           "price": 3500,
-          "urlImage": "casadoconbistec0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "casadoconbistec0.jpeg"
         },
         {
           "id": 9,
@@ -190,18 +150,13 @@ export const menu = {
             "fr": "Poulet"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Jugoso pollo servido con arroz, frijoles y ensalada fresca.",
+            "en": "Juicy chicken served with rice, beans, and fresh salad.",
+            "fr": "Poulet juteux servi avec riz, haricots et salade fraîche."
           },
           "price": 3500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 10,
@@ -211,18 +166,13 @@ export const menu = {
             "fr": "Côtelette de Porc"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Sabrosa chuleta acompañada de arroz, frijoles y ensalada.",
+            "en": "Tasty pork chop served with rice, beans, and salad.",
+            "fr": "Délicieuse côtelette de porc accompagnée de riz, haricots et salade."
           },
           "price": 3500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 11,
@@ -232,17 +182,12 @@ export const menu = {
             "fr": "Poisson"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pescado fresco acompañado de arroz, frijoles y ensalada.",
+            "en": "Fresh fish served with rice, beans, and salad.",
+            "fr": "Poisson frais servi avec riz, haricots et salade."
           },
           "price": 3500,
-          "urlImage": "casadodepescado0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "casadodepescado0.jpeg"
         },
         {
           "id": 12,
@@ -252,17 +197,12 @@ export const menu = {
             "fr": "Viande en Sauce"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Carne tierna en salsa acompañada de arroz, frijoles y ensalada.",
+            "en": "Tender meat in sauce served with rice, beans, and salad.",
+            "fr": "Viande tendre en sauce servie avec riz, haricots et salade."
           },
           "price": 3500,
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -281,18 +221,13 @@ export const menu = {
             "fr": "Soupe Noire"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Deliciosa sopa tradicional hecha con frijoles negros y especias.",
+            "en": "Delicious traditional soup made with black beans and spices.",
+            "fr": "Délicieuse soupe traditionnelle préparée avec des haricots noirs et des épices."
           },
           "price": 3000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 14,
@@ -302,18 +237,13 @@ export const menu = {
             "fr": "Soupe de Poulet"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Sopa casera con pollo, verduras frescas y caldo sabroso.",
+            "en": "Homemade soup with chicken, fresh vegetables, and flavorful broth.",
+            "fr": "Soupe maison avec poulet, légumes frais et bouillon savoureux."
           },
           "price": 3000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 15,
@@ -323,18 +253,13 @@ export const menu = {
             "fr": "Soupe Ranchera"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Sopa picante con tomate, chiles y trozos de carne.",
+            "en": "Spicy soup with tomato, chilies, and chunks of meat.",
+            "fr": "Soupe épicée avec tomate, piments et morceaux de viande."
           },
           "price": 4000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 16,
@@ -344,18 +269,13 @@ export const menu = {
             "fr": "Soupe Aztèque"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Sopa tradicional mexicana con tortilla frita, chile y aguacate.",
+            "en": "Traditional Mexican soup with fried tortilla, chili, and avocado.",
+            "fr": "Soupe mexicaine traditionnelle avec tortilla frite, piment et avocat."
           },
           "price": 3500,
           "image": "",
           "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
         },
         {
           "id": 17,
@@ -365,18 +285,13 @@ export const menu = {
             "fr": "Soupe de Fruits de Mer"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Sopa rica en mariscos frescos con especias aromáticas.",
+            "en": "Soup rich in fresh seafood with aromatic spices.",
+            "fr": "Soupe riche en fruits de mer frais avec des épices aromatiques."
           },
           "price": 4000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -395,18 +310,13 @@ export const menu = {
             "fr": "Churrasco"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Jugoso churrasco de res a la parrilla. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Juicy grilled beef steak. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Churrasco de bœuf grillé et juteux. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 7000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 19,
@@ -416,17 +326,12 @@ export const menu = {
             "fr": "Fajitas"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Tiras de carne salteadas con vegetales. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Sautéed beef strips with vegetables. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Lanières de viande sautées avec légumes. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4800,
-          "urlImage": "fajistasres0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "fajistasres0.jpeg"
         },
         {
           "id": 20,
@@ -436,60 +341,45 @@ export const menu = {
             "fr": "Longe Grillée"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Lomo de res a la plancha, tierno y jugoso. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Grilled beef loin, tender and juicy. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Longe de bœuf grillée, tendre et juteuse. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 6000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 21,
           "name": {
             "es": "Lomo en Salsa Jalapeña",
             "en": "Loin in Jalapeña Sauce",
-            "fr": ""
+            "fr": "Longe en Sauce Jalapeña"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Lomo de res en salsa cremosa de jalapeños. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Beef loin in creamy jalapeño sauce. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Longe de bœuf dans une sauce crémeuse aux jalapeños. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 6500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 22,
           "name": {
             "es": "Lomo a la Parmesana",
             "en": "Parmesan Loin",
-            "fr": ""
+            "fr": "Longe à la Parmesane"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Lomo de res cubierto con queso parmesano gratinado. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Beef loin covered with gratinated parmesan cheese. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Longe de bœuf recouverte de fromage parmesan gratiné. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 6500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -497,7 +387,7 @@ export const menu = {
       "name": {
         "es": "Bocas",
         "en": "Bocas",
-        "fr": ""
+        "fr": "Bocas"
       },
       "items": [
         {
@@ -508,18 +398,13 @@ export const menu = {
             "fr": "Quesadilla"
           },
           "description": {
-            "es": "Pollo o carne",
-            "en": "",
-            "fr": ""
+            "es": "Tortilla rellena de pollo o carne con queso fundido. Pollo o carne",
+            "en": "Tortilla filled with chicken or beef and melted cheese. Chicken or beef",
+            "fr": "Tortilla garnie de poulet ou de viande avec du fromage fondu. Poulet ou bœuf"
           },
           "price": 2500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 121,
@@ -529,17 +414,12 @@ export const menu = {
             "fr": "Nachos"
           },
           "description": {
-            "es": "Pollo, carne o mixtos",
-            "en": "",
-            "fr": ""
+            "es": "Totopos crujientes con pollo, carne o mezcla y queso derretido. Pollo, carne o mixtos",
+            "en": "Crispy tortilla chips with chicken, beef or mixed toppings and melted cheese. Chicken, beef or mixed",
+            "fr": "Chips de tortilla croustillants avec poulet, viande ou mélange et fromage fondu. Poulet, bœuf ou mixte"
           },
           "price": 2800,
-          "urlImage": "nachos0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "nachos0.jpeg"
         },
         {
           "id": 122,
@@ -549,18 +429,13 @@ export const menu = {
             "fr": "Burrito Patate Douce"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Burrito relleno con batata y otros ingredientes frescos.",
+            "en": "Burrito filled with sweet potato and other fresh ingredients.",
+            "fr": "Burrito garni de patate douce et autres ingrédients frais."
           },
           "price": 2000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 123,
@@ -570,18 +445,13 @@ export const menu = {
             "fr": "Patrulla"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Platillo tradicional con variedad de ingredientes típicos.",
+            "en": "Traditional dish with a variety of typical ingredients.",
+            "fr": "Plat traditionnel avec une variété d'ingrédients typiques."
           },
           "price": 3000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 124,
@@ -591,38 +461,28 @@ export const menu = {
             "fr": "Chalupa de Viande"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Tortilla frita rellena de carne sazonada y acompañamientos.",
+            "en": "Fried tortilla filled with seasoned meat and toppings.",
+            "fr": "Tortilla frite garnie de viande assaisonnée et garnitures."
           },
           "price": 2500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 125,
           "name": {
             "es": "Orden de Papas",
             "en": "French Fries",
-            "fr": ""
+            "fr": "Frites"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Porción de papas fritas crujientes y doradas.",
+            "en": "Portion of crispy golden french fries.",
+            "fr": "Portion de frites croustillantes et dorées."
           },
           "price": 2000,
-          "urlImage": "ordenpapas0",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "ordenpapas0"
         },
         {
           "id": 126,
@@ -632,17 +492,12 @@ export const menu = {
             "fr": "Tacos"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Tortillas rellenas con carne, pollo u otros ingredientes.",
+            "en": "Tortillas filled with beef, chicken or other ingredients.",
+            "fr": "Tortillas garnies de viande, poulet ou autres ingrédients."
           },
           "price": 3000,
-          "urlImage": "tacos0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "tacos0.jpeg"
         },
         {
           "id": 127,
@@ -652,18 +507,13 @@ export const menu = {
             "fr": "Papanachos"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Plato de papas fritas con frijoles, carne y queso.",
+            "en": "Dish of fries topped with beans, meat, and cheese.",
+            "fr": "Plat de frites garnies de haricots, viande et fromage."
           },
           "price": 3500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 128,
@@ -673,17 +523,12 @@ export const menu = {
             "fr": "Salchipapas"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Papas fritas con salchicha picada y salsas variadas.",
+            "en": "French fries with chopped sausage and various sauces.",
+            "fr": "Frites avec saucisse hachée et diverses sauces."
           },
           "price": 2500,
-          "urlImage": "salchipapas0.jpeg",
-          "ingredients": {
-            "es": "Salchicha, papas fritas",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "salchipapas0.jpeg"
         },
         {
           "id": 129,
@@ -693,184 +538,139 @@ export const menu = {
             "fr": "Morceaux de Porc Frits"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Trozos crujientes de carne frita.",
+            "en": "Crispy fried pork chunks.",
+            "fr": "Morceaux croustillants de porc frit."
           },
           "price": 3500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 130,
           "name": {
             "es": "Mexicana",
-            "en": "",
-            "fr": ""
+            "en": "Mexicana",
+            "fr": "Mexicana"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Variedad de ingredientes mexicanos en un solo plato.",
+            "en": "Variety of Mexican ingredients in one dish.",
+            "fr": "Variété d'ingrédients mexicains dans un plat."
           },
           "price": 3000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 131,
           "name": {
             "es": "Carne en Salsa",
-            "en": "",
-            "fr": ""
+            "en": "Meat in Sauce",
+            "fr": "Viande en Sauce"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Carne cocinada en salsa especial.",
+            "en": "Meat cooked in a special sauce.",
+            "fr": "Viande cuite dans une sauce spéciale."
           },
           "price": 3000,
-          "urlImage": "carneensalsa0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "carneensalsa0.jpeg"
         },
         {
           "id": 132,
           "name": {
             "es": "Costilla ahumada",
-            "en": "",
-            "fr": ""
+            "en": "Smoked Ribs",
+            "fr": "Côtes Fumées"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Costillas de cerdo ahumadas y tiernas.",
+            "en": "Tender smoked pork ribs.",
+            "fr": "Côtes de porc fumées et tendres."
           },
           "price": 3200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 133,
           "name": {
             "es": "Ceviche de Pescado",
-            "en": "",
-            "fr": ""
+            "en": "Fish Ceviche",
+            "fr": "Ceviche de Poisson"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pescado marinado en cítricos con verduras frescas.",
+            "en": "Fish marinated in citrus with fresh vegetables.",
+            "fr": "Poisson mariné dans des agrumes avec des légumes frais."
           },
           "price": 3000,
-          "urlImage": "cevichedepescado0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "cevichedepescado0.jpeg"
         },
         {
           "id": 134,
           "name": {
             "es": "Boca de Pollo",
-            "en": "",
-            "fr": ""
+            "en": "Chicken Bite",
+            "fr": "Bouchée de Poulet"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pequeñas porciones de pollo sazonado.",
+            "en": "Small portions of seasoned chicken.",
+            "fr": "Petites portions de poulet assaisonné."
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 135,
           "name": {
             "es": "Porción de Pollo",
-            "en": "",
-            "fr": ""
+            "en": "Portion of Chicken",
+            "fr": "Portion de Poulet"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Porción generosa de pollo preparado.",
+            "en": "Generous portion of prepared chicken.",
+            "fr": "Portion généreuse de poulet préparé."
           },
           "price": 2000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 136,
           "name": {
             "es": "Gallo de Pescado",
-            "en": "",
-            "fr": ""
+            "en": "Fish Gallo",
+            "fr": "Gallo de Poisson"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Platillo de pescado fresco y sabroso.",
+            "en": "Dish with fresh and tasty fish.",
+            "fr": "Plat avec du poisson frais et savoureux."
           },
           "price": 2500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 137,
           "name": {
             "es": "Yuquitas",
-            "en": "",
-            "fr": ""
+            "en": "Yuquitas",
+            "fr": "Yuquitas"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Porción de yuca frita crocante.",
+            "en": "Portion of crispy fried yucca.",
+            "fr": "Portion de manioc frit croustillant."
           },
           "price": 2000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 138,
@@ -880,163 +680,123 @@ export const menu = {
             "fr": "Chifrijo"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Combinación de arroz, frijoles, carne y pico de gallo.",
+            "en": "Combination of rice, beans, meat, and pico de gallo.",
+            "fr": "Combinaison de riz, haricots, viande et pico de gallo."
           },
           "price": 3500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "Chicharrón, frijoles, pico de gallo, arroz",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 139,
           "name": {
             "es": "Orden de Patacones",
-            "en": "",
-            "fr": ""
+            "en": "Order of Patacones",
+            "fr": "Commande de Patacones"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Porción de patacones crujientes y dorados.",
+            "en": "Portion of crispy and golden fried plantains.",
+            "fr": "Portion de plantains frits croustillants et dorés."
           },
           "price": 2000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 140,
           "name": {
             "es": "Dedos de Pescado",
-            "en": "",
-            "fr": ""
+            "en": "Fish Fingers",
+            "fr": "Doigts de Poisson"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Tiras de pescado empanizadas y fritas.",
+            "en": "Breaded and fried fish strips.",
+            "fr": "Bâtonnets de poisson panés et frits."
           },
           "price": 3000,
-          "urlImage": "dedospescado0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "dedospescado0.jpeg"
         },
         {
           "id": 141,
           "name": {
             "es": "Nuggets de Pollo",
-            "en": "",
-            "fr": ""
+            "en": "Chicken Nuggets",
+            "fr": "Nuggets de Poulet"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Bocaditos de pollo empanizados y fritos.",
+            "en": "Breaded and fried chicken bites.",
+            "fr": "Bouchées de poulet panées et frites."
           },
           "price": 3000,
-          "urlImage": "nuggetsdepollo0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "nuggetsdepollo0.jpeg"
         },
         {
           "id": 142,
           "name": {
-            "es": "Hamburguesa",
-            "en": "",
-            "fr": ""
+            "es": "Hamburguesa(Pollo o Carne)",
+            "en": "Hamburger",
+            "fr": "Hamburger"
           },
           "description": {
-            "es": "Pollo o Carne",
-            "en": "",
-            "fr": ""
+            "es": "Hamburguesa de pollo o carne jugosa y sabrosa.",
+            "en": "Juicy and tasty chicken or beef hamburger.",
+            "fr": "Hamburger juteux et savoureux de poulet ou de bœuf."
           },
           "price": 2800,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 143,
           "name": {
             "es": "Hamburguesa La Pollera",
-            "en": "",
-            "fr": ""
+            "en": "La Pollera Hamburger",
+            "fr": "Hamburger La Pollera"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Especialidad de la casa con ingredientes selectos.",
+            "en": "House specialty with select ingredients.",
+            "fr": "Spécialité de la maison avec des ingrédients sélectionnés."
           },
           "price": 3800,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 144,
           "name": {
             "es": "Surtida Pequeña",
-            "en": "",
-            "fr": ""
+            "en": "Small Assortment",
+            "fr": "Assortiment Petit"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Variedad pequeña de bocas para compartir.",
+            "en": "Small assortment of bites to share.",
+            "fr": "Petit assortiment de bouchées à partager."
           },
           "price": 6000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 145,
           "name": {
             "es": "Surtida Grande",
-            "en": "",
-            "fr": ""
+            "en": "Large Assortment",
+            "fr": "Assortiment Grand"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Gran variedad de bocas para grupos grandes.",
+            "en": "Large assortment of bites for big groups.",
+            "fr": "Grand assortiment de bouchées pour grands groupes."
           },
           "price": 12000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -1055,17 +815,12 @@ export const menu = {
             "fr": "Spaghetti Bolognaise"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pasta con salsa tradicional de carne y tomate.",
+            "en": "Pasta with traditional meat and tomato sauce.",
+            "fr": "Pâtes avec sauce traditionnelle à la viande et à la tomate."
           },
           "price": 4000,
-          "urlImage": "spaghettiboloñesa0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "spaghettiboloñesa0.jpeg"
         },
         {
           "id": 151,
@@ -1075,17 +830,12 @@ export const menu = {
             "fr": "Spaghetti Alfredo"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pasta en salsa cremosa de queso parmesano y mantequilla.",
+            "en": "Pasta in creamy sauce with parmesan cheese and butter.",
+            "fr": "Pâtes dans une sauce crémeuse au parmesan et au beurre."
           },
           "price": 4000,
-          "urlImage": "spaguettialfredo.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "spaguettialfredo.jpeg"
         },
         {
           "id": 152,
@@ -1095,18 +845,13 @@ export const menu = {
             "fr": "Spaghetti Marinara"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pasta con salsa de mariscos y tomate fresco.",
+            "en": "Pasta with seafood and fresh tomato sauce.",
+            "fr": "Pâtes avec sauce aux fruits de mer et tomate fraîche."
           },
           "price": 4500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 153,
@@ -1116,18 +861,13 @@ export const menu = {
             "fr": "Spaghetti à l'Ail"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pasta salteada con ajo, aceite de oliva y especias.",
+            "en": "Pasta sautéed with garlic, olive oil, and spices.",
+            "fr": "Pâtes sautées à l'ail, huile d'olive et épices."
           },
           "price": 3500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -1146,17 +886,12 @@ export const menu = {
             "fr": "Crêpes"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Delgadas y suaves crepas rellenas de frutas o dulce de leche.",
+            "en": "Thin and soft crepes filled with fruits or caramel spread.",
+            "fr": "Crêpes fines et moelleuses garnies de fruits ou de caramel."
           },
           "price": 2000,
-          "urlImage": "crepas0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "crepas0.jpeg"
         },
         {
           "id": 161,
@@ -1166,18 +901,13 @@ export const menu = {
             "fr": "Coupe de Glace"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Porción de helado con toppings a elección.",
+            "en": "Serving of ice cream with choice of toppings.",
+            "fr": "Portion de glace avec garnitures au choix."
           },
           "price": 1000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -1185,7 +915,7 @@ export const menu = {
       "name": {
         "es": "Pescado",
         "en": "Fish Dishes",
-        "fr": ""
+        "fr": "Plats de Poisson"
       },
       "items": [
         {
@@ -1196,17 +926,12 @@ export const menu = {
             "fr": "Corvina Grillée"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Filete de corvina cocinado a la plancha con especias.",
+            "en": "Corvina fillet grilled with spices.",
+            "fr": "Filet de corvina grillé avec des épices."
           },
           "price": 4900,
-          "urlImage": "corvinaalaplancha0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "corvinaalaplancha0.jpeg"
         },
         {
           "id": 163,
@@ -1216,18 +941,13 @@ export const menu = {
             "fr": "Corvina Panée"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Corvina cubierta con pan rallado y frita hasta dorar.",
+            "en": "Corvina coated with breadcrumbs and fried until golden.",
+            "fr": "Corvina panée et frite jusqu'à dorure."
           },
           "price": 4900,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 164,
@@ -1237,18 +957,13 @@ export const menu = {
             "fr": "Corvina Sauce aux Fruits de Mer"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Corvina servida con salsa cremosa de mariscos frescos.",
+            "en": "Corvina served with creamy fresh seafood sauce.",
+            "fr": "Corvina servie avec une sauce crémeuse aux fruits de mer frais."
           },
           "price": 6500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 165,
@@ -1258,18 +973,13 @@ export const menu = {
             "fr": "Corvina à l'Ail"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Corvina salteada en salsa de ajo y aceite de oliva.",
+            "en": "Corvina sautéed in garlic sauce and olive oil.",
+            "fr": "Corvina sautée à la sauce à l'ail et huile d'olive."
           },
           "price": 4900,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 166,
@@ -1279,17 +989,12 @@ export const menu = {
             "fr": "Crevettes Panées"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Camarones cubiertos de pan rallado y fritos crujientes.",
+            "en": "Shrimps coated with breadcrumbs and fried crispy.",
+            "fr": "Crevettes panées et frites croustillantes."
           },
           "price": 4900,
-          "urlImage": "camaronesempanizados0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "camaronesempanizados0.jpeg"
         },
         {
           "id": 167,
@@ -1299,18 +1004,13 @@ export const menu = {
             "fr": "Crevettes à l'Ail"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Camarones salteados en salsa de ajo y mantequilla.",
+            "en": "Shrimps sautéed in garlic butter sauce.",
+            "fr": "Crevettes sautées dans une sauce au beurre et à l'ail."
           },
           "price": 4900,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 168,
@@ -1320,18 +1020,13 @@ export const menu = {
             "fr": "Ceviche de Crevettes"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Camarones marinados en jugo de limón con cebolla y cilantro.",
+            "en": "Shrimps marinated in lime juice with onion and cilantro.",
+            "fr": "Crevettes marinées au jus de citron vert avec oignon et coriandre."
           },
           "price": 5000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 169,
@@ -1341,18 +1036,13 @@ export const menu = {
             "fr": "Ceviche de Poisson"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pescado fresco marinado en jugo de limón con verduras.",
+            "en": "Fresh fish marinated in lime juice with vegetables.",
+            "fr": "Poisson frais mariné au jus de citron vert avec des légumes."
           },
           "price": 4000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 170,
@@ -1362,18 +1052,13 @@ export const menu = {
             "fr": "Ceviche Mixte"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Mezcla de mariscos y pescado marinados en jugo de limón.",
+            "en": "Mix of seafood and fish marinated in lime juice.",
+            "fr": "Mélange de fruits de mer et poisson mariné au jus de citron vert."
           },
           "price": 4800,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 171,
@@ -1383,18 +1068,13 @@ export const menu = {
             "fr": "Fruits de Mer à l'Ail"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Variedad de mariscos salteados en salsa de ajo.",
+            "en": "Variety of seafood sautéed in garlic sauce.",
+            "fr": "Variété de fruits de mer sautés à la sauce à l'ail."
           },
           "price": 4800,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 172,
@@ -1404,18 +1084,13 @@ export const menu = {
             "fr": "Fruits de Mer Sauce Blanche"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Mariscos servidos en salsa cremosa blanca.",
+            "en": "Seafood served in creamy white sauce.",
+            "fr": "Fruits de mer servis dans une sauce blanche crémeuse."
           },
           "price": 5000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -1423,7 +1098,7 @@ export const menu = {
       "name": {
         "es": "Pollo",
         "en": "Chicken",
-        "fr": ""
+        "fr": "Poulet"
       },
       "items": [
         {
@@ -1434,17 +1109,12 @@ export const menu = {
             "fr": "Poulet Grillé"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pechuga de pollo a la plancha, jugosa y bien sazonada. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Grilled chicken breast, juicy and well-seasoned. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Blanc de poulet grillé, juteux et bien assaisonné. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4500,
-          "urlImage": "polloalaplancha0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "polloalaplancha0.jpeg"
         },
         {
           "id": 181,
@@ -1454,18 +1124,13 @@ export const menu = {
             "fr": "Poulet Pané"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pechuga de pollo empanizada, crujiente por fuera y tierna por dentro. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Breaded chicken breast, crispy outside and tender inside. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Blanc de poulet pané, croustillant à l'extérieur et tendre à l'intérieur. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 182,
@@ -1475,18 +1140,13 @@ export const menu = {
             "fr": "Poulet Sauce Blanche"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pechuga de pollo bañada en salsa blanca cremosa. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Chicken breast topped with creamy white sauce. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Blanc de poulet nappé de sauce blanche onctueuse. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4700,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 183,
@@ -1496,18 +1156,13 @@ export const menu = {
             "fr": "Poulet Sauce Jalapeño"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pechuga de pollo en salsa cremosa con jalapeños. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Chicken breast in creamy jalapeño sauce. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Blanc de poulet dans une sauce crémeuse aux jalapeños. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4700,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 184,
@@ -1517,18 +1172,13 @@ export const menu = {
             "fr": "Fajitas Grillées"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Tiras de pollo a la plancha con vegetales salteados. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Grilled chicken strips with sautéed vegetables. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Lanières de poulet grillé avec légumes sautés. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 185,
@@ -1538,18 +1188,13 @@ export const menu = {
             "fr": "Fajitas Panées"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Tiras de pollo empanizadas acompañadas de vegetales. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Breaded chicken strips served with vegetables. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Lanières de poulet panées servies avec des légumes. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 186,
@@ -1559,18 +1204,13 @@ export const menu = {
             "fr": "Fajitas Mixtes"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Fajitas de pollo y carne con vegetales salteados. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Chicken and beef fajitas with sautéed vegetables. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Fajitas au poulet et bœuf avec légumes sautés. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4500,
           "image": "",
-          "urlImage": "fajitasmixta0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "fajitasmixta0.jpeg"
         },
         {
           "id": 187,
@@ -1580,18 +1220,13 @@ export const menu = {
             "fr": "Poulet Barbecue"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pechuga de pollo bañada en salsa barbacoa. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Chicken breast topped with BBQ sauce. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Blanc de poulet nappé de sauce barbecue. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4700,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 188,
@@ -1601,18 +1236,13 @@ export const menu = {
             "fr": "Cordon Bleu"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Pollo relleno de jamón y queso, empanizado y frito. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Chicken stuffed with ham and cheese, breaded and fried. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Poulet farci au jambon et fromage, pané et frit. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4700,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 189,
@@ -1622,17 +1252,12 @@ export const menu = {
             "fr": "Ailes de Poulet"
           },
           "description": {
-            "es": "A la BBQ o Mostaza Miel",
-            "en": "",
-            "fr": ""
+            "es": "A la BBQ o Mostaza Miel. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "With BBQ or Honey Mustard. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Avec sauce BBQ ou Moutarde au Miel. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 4500,
-          "urlImage": "alitas0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "alitas0.jpeg"
         }
       ]
     }
@@ -1642,7 +1267,7 @@ export const menu = {
       "name": {
         "es": "Cervezas Nacionales",
         "en": "National Beers",
-        "fr": ""
+        "fr": "Bières Nationales"
       },
       "items": [
         {
@@ -1659,12 +1284,7 @@ export const menu = {
           },
           "price": 1350,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 31,
@@ -1680,12 +1300,7 @@ export const menu = {
           },
           "price": 1350,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -1693,7 +1308,7 @@ export const menu = {
       "name": {
         "es": "Cervezas Premium",
         "en": "Premium Beers",
-        "fr": ""
+        "fr": "Bières Premium"
       },
       "items": [
         {
@@ -1710,12 +1325,7 @@ export const menu = {
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 36,
@@ -1726,17 +1336,12 @@ export const menu = {
           },
           "description": {
             "es": "Original y Cero (350ml)",
-            "en": "Original y Cero (350ml)",
-            "fr": "Original y Cero (350ml)"
+            "en": "Original and Zero (350ml)",
+            "fr": "Original et Zéro (350ml)"
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 37,
@@ -1746,18 +1351,13 @@ export const menu = {
             "fr": "Sol"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Cerveza clara y refrescante (350ml)",
+            "en": "Light and refreshing beer (350ml)",
+            "fr": "Bière légère et rafraîchissante (350ml)"
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -1765,7 +1365,7 @@ export const menu = {
       "name": {
         "es": "Cocteles Preparados",
         "en": "Cocktails",
-        "fr": ""
+        "fr": "Cocktails Préparés"
       },
       "items": [
         {
@@ -1777,17 +1377,12 @@ export const menu = {
           },
           "description": {
             "es": "Guaraná, Black, Red (355ml)",
-            "en": "",
-            "fr": ""
+            "en": "Guarana, Black, Red (355ml)",
+            "fr": "Guarana, Black, Red (355ml)"
           },
           "price": 1800,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 41,
@@ -1797,18 +1392,13 @@ export const menu = {
             "fr": "Adan y Eva"
           },
           "description": {
-            "es": "Frutos Rojos, Maracuyá Piña, Gin & Tonic (355ml)",
-            "en": "",
-            "fr": ""
+            "es": "Frutos Rojos, Maracuyá, Piña, Gin & Tonic (355ml)",
+            "en": "Red Fruits, Passion Fruit, Pineapple, Gin & Tonic (355ml)",
+            "fr": "Fruits Rouges, Fruit de la Passion, Ananas, Gin & Tonic (355ml)"
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 42,
@@ -1818,26 +1408,21 @@ export const menu = {
             "fr": "Bamboo"
           },
           "description": {
-            "es": "Daiquirí, Ron Cola (350ml)",
-            "en": "",
-            "fr": ""
+            "es": "Daiquirí, Ron con Cola (350ml)",
+            "en": "Daiquiri, Rum with Cola (350ml)",
+            "fr": "Daiquiri, Rhum avec Cola (350ml)"
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ],
     },
     "Liga de la Casa": {
       "name": {
         "es": "Liga de la Casa",
-        "en": "",
-        "fr": ""
+        "en": "House Mix",
+        "fr": "Mélange de la Maison"
       },
       "items": [
         {
@@ -1848,18 +1433,13 @@ export const menu = {
             "fr": "Flor de Caña"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Ron Flor de Caña servido solo o con mezcla",
+            "en": "Flor de Caña rum served neat or mixed",
+            "fr": "Rhum Flor de Caña servi pur ou mélangé"
           },
           "price": 1200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 44,
@@ -1875,71 +1455,56 @@ export const menu = {
           },
           "price": 1200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ],
     },
     "Sangria y Vino de la Casa": {
       "name": {
-        "es": "Sangria y Vino de la Casa",
-        "en": "",
-        "fr": ""
+        "es": "Sangría y Vino de la Casa",
+        "en": "House Sangria and Wine",
+        "fr": "Sangria et Vin de la Maison"
       },
       "items": [
         {
           "id": 45,
           "name": {
-            "es": "Copa de Sangria",
-            "en": "Copa de Sangria",
-            "fr": "Copa de Sangria"
+            "es": "Copa de Sangría",
+            "en": "Glass of Sangria",
+            "fr": "Verre de Sangria"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Sangría casera con frutas frescas",
+            "en": "Homemade sangria with fresh fruits",
+            "fr": "Sangria maison avec fruits frais"
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 46,
           "name": {
             "es": "Copa de vino Contenda",
-            "en": "Copa de vino Contenda",
-            "fr": "Copa de vino Contenda"
+            "en": "Glass of Contenda Wine",
+            "fr": "Verre de Vin Contenda"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Vino tinto de la casa servido por copa",
+            "en": "House red wine served by the glass",
+            "fr": "Vin rouge de la maison servi au verre"
           },
           "price": 2000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
     "Refrescos": {
       "name": {
         "es": "Refrescos",
-        "en": "",
-        "fr": ""
+        "en": "Soft Drinks",
+        "fr": "Boissons Gazeuses"
       },
       "items": [
         {
@@ -1950,18 +1515,13 @@ export const menu = {
             "fr": "Pepsi"
           },
           "description": {
-            "es": "Original (350ml)",
-            "en": "",
-            "fr": ""
+            "es": "Refresco Pepsi original en botella de 350ml.",
+            "en": "Original Pepsi soft drink in a 350ml bottle.",
+            "fr": "Soda Pepsi original en bouteille de 350ml."
           },
           "price": 1000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 51,
@@ -1971,18 +1531,13 @@ export const menu = {
             "fr": "Tropical"
           },
           "description": {
-            "es": "Blanco Arándanos, Blanco Frutas Tropicales, Melocotón, Frutas (355ml)",
-            "en": "",
-            "fr": ""
+            "es": "Sabor Blanco Arándanos, Frutas Tropicales, Melocotón o Frutas (355ml).",
+            "en": "Blueberry, Tropical Fruits, Peach or Mixed Fruit flavors (355ml).",
+            "fr": "Saveurs Myrtille, Fruits Tropicaux, Pêche ou Fruits Mixtes (355ml)."
           },
           "price": 1000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 52,
@@ -1992,18 +1547,13 @@ export const menu = {
             "fr": "Pepsi"
           },
           "description": {
-            "es": "Original (600ml)",
-            "en": "",
-            "fr": ""
+            "es": "Refresco Pepsi original en botella de 600ml.",
+            "en": "Original Pepsi soft drink in a 600ml bottle.",
+            "fr": "Soda Pepsi original en bouteille de 600ml."
           },
           "price": 1200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 53,
@@ -2013,18 +1563,13 @@ export const menu = {
             "fr": "7 UP"
           },
           "description": {
-            "es": "Original (600ml)",
-            "en": "",
-            "fr": ""
+            "es": "Refresco limón-lima clásico en botella de 600ml.",
+            "en": "Classic lemon-lime soda in a 600ml bottle.",
+            "fr": "Soda citron-lime classique en bouteille de 600ml."
           },
           "price": 1200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 54,
@@ -2034,18 +1579,13 @@ export const menu = {
             "fr": "H2OH"
           },
           "description": {
-            "es": "Lima Limon, Toronja (600ml)",
-            "en": "",
-            "fr": ""
+            "es": "Refresco bajo en calorías, sabor Lima Limón o Toronja (600ml).",
+            "en": "Low-calorie soda, Lime Lemon or Grapefruit flavor (600ml).",
+            "fr": "Boisson faible en calories, saveur Citron Vert ou Pamplemousse (600ml)."
           },
           "price": 1200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 55,
@@ -2055,18 +1595,13 @@ export const menu = {
             "fr": "Maximalta"
           },
           "description": {
-            "es": "Original (350ml)",
-            "en": "",
-            "fr": ""
+            "es": "Malta energizante con sabor único y natural (350ml).",
+            "en": "Energizing malt drink with a unique natural taste (350ml).",
+            "fr": "Boisson maltée énergisante au goût naturel unique (350ml)."
           },
           "price": 1000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 56,
@@ -2076,18 +1611,13 @@ export const menu = {
             "fr": "Vitaloe"
           },
           "description": {
-            "es": "Original (350ml)",
-            "en": "",
-            "fr": ""
+            "es": "Bebida de aloe vera refrescante y saludable (350ml).",
+            "en": "Refreshing and healthy aloe vera drink (350ml).",
+            "fr": "Boisson à l’aloe vera rafraîchissante et saine (350ml)."
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 57,
@@ -2097,18 +1627,13 @@ export const menu = {
             "fr": "Maxxx Energy"
           },
           "description": {
-            "es": "Guaraná (350ml)",
-            "en": "",
-            "fr": ""
+            "es": "Bebida energética con sabor a guaraná (350ml).",
+            "en": "Energy drink with guaraná flavor (350ml).",
+            "fr": "Boisson énergétique au goût de guarana (350ml)."
           },
           "price": 1500,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         },
         {
           "id": 58,
@@ -2118,18 +1643,13 @@ export const menu = {
             "fr": "Agua Cristal"
           },
           "description": {
-            "es": "(600ml)",
-            "en": "",
-            "fr": ""
+            "es": "Agua pura embotellada (600ml).",
+            "en": "Bottled purified water (600ml).",
+            "fr": "Eau purifiée en bouteille (600ml)."
           },
           "price": 1200,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     },
@@ -2148,52 +1668,47 @@ export const menu = {
             "fr": "Old Parr"
           },
           "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
+            "es": "Whisky escocés de 12 años, elegante y suave al paladar.",
+            "en": "12-year-old Scotch whisky, elegant and smooth on the palate.",
+            "fr": "Whisky écossais de 12 ans, élégant et doux en bouche."
           },
           "price": 2000,
           "image": "",
-          "urlImage": "default",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
+          "urlImage": "default"
         }
       ]
     }
   },
-  "combos": {
-    "Rices": {
-      "name": {
-        "es": "Arroces",
-        "en": "Rices",
-        "fr": ""
-      },
-      "items": [
-        {
-          "id": 1,
-          "name": {
-            "es": "Arroz con Pollo",
-            "en": "Chicken Rice",
-            "fr": "Riz au Poulet"
-          },
-          "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          },
-          "price": 3800,
-          "image": "",
-          "urlImage": "arrozconpollo0.jpeg",
-          "ingredients": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          }
-        }
-      ]
-    }
-  }
+  // "combos": {
+  //   "Rices": {
+  //     "name": {
+  //       "es": "Arroces",
+  //       "en": "Rices",
+  //       "fr": ""
+  //     },
+  //     "items": [
+  //       {
+  //         "id": 1,
+  //         "name": {
+  //           "es": "Arroz con Pollo",
+  //           "en": "Chicken Rice",
+  //           "fr": "Riz au Poulet"
+  //         },
+  //         "description": {
+  //           "es": "",
+  //           "en": "",
+  //           "fr": ""
+  //         },
+  //         "price": 3800,
+  //         "image": "",
+  //         "urlImage": "arrozconpollo0.jpeg",
+  //         "ingredients": {
+  //           "es": "",
+  //           "en": "",
+  //           "fr": ""
+  //         }
+  //       }
+  //     ]
+  //   }
+  // }
 }
