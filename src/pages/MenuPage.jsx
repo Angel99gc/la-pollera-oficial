@@ -150,12 +150,12 @@ const MenuPage = () => {
                 {
                   !activeSubCategory ?
                     Object.keys(menuData[activeCategory]).map(subCategoryKey => menuData[activeCategory][subCategoryKey].items.map((item, index) => {
-                      return <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                      return <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} subCategory={activeSubCategory} />
                     })
                     )
 
                     : menuData[activeCategory][activeSubCategory].items.map((item, index) => (
-                      <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                      <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} subCategory={activeSubCategory} />
                     ))
 
                 }
@@ -234,6 +234,13 @@ const MenuPage = () => {
                         <h4 className="font-semibold text-white mb-2">{t.common.description}</h4>
                         <p className="text-gray-400 leading-relaxed">
                           {selectedItem.description[language]}
+                          {
+                            (activeSubCategory === "Red Meats" || activeSubCategory === "Chicken") &&
+                            <>
+                              <br />
+                              {t.menu.accompaniments[language]}
+                            </>
+                          }
                         </p>
                       </div>
                       <div className="flex items-center justify-between mt-4">
