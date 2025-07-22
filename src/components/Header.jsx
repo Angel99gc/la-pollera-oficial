@@ -22,10 +22,10 @@ const Header = () => {
 
   const navigateToSection = (sectionId) => {
     if (sectionId == 'menu') {
-      navigate('/la-pollera-oficial/menu');
+      navigate('/menu');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      navigate(`/la-pollera-oficial`, { state: { scrollToId: sectionId } });
+      navigate(`/`, { state: { scrollToId: sectionId } });
     }
     setIsMenuOpen(false)
   };

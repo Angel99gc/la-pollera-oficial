@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Angel99gc.github.io/la-pollera-oficial/",
+  "homepage": "https://Angel99gc.github.io/la-pollera-oficial",
   "name": "la-pollera-oficial",
   "type": "module",
   "version": "1.0.beta",
@@ -21,7 +21,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
     "react-router": "^7.7.0",
-    "react-router-dom": "^7.7.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"
   },

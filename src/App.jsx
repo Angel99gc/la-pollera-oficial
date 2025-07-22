@@ -41,7 +41,7 @@ function App() {
             }
           />
           <Route
-            path='/*'
+            path='*'
             element={
               <Navigate to={'/'} />
             }
