@@ -211,7 +211,7 @@ export const menu = {
       "name": {
         "es": "Sopas",
         "en": "Soups",
-        "fr": ""
+        "fr": "Soupes"
       },
       "items": [
         {
@@ -300,7 +300,7 @@ export const menu = {
       "name": {
         "es": "Carnes Rojas",
         "en": "Red Meats",
-        "fr": ""
+        "fr": "Viandes Rouges"
       },
       "items": [
         {
@@ -805,7 +805,7 @@ export const menu = {
       "name": {
         "es": "Pastas",
         "en": "Spaghetti",
-        "fr": ""
+        "fr": "Spaghetti"
       },
       "items": [
         {
@@ -876,7 +876,7 @@ export const menu = {
       "name": {
         "es": "Postres",
         "en": "Desserts",
-        "fr": ""
+        "fr": "Desserts"
       },
       "items": [
         {
@@ -1441,22 +1441,6 @@ export const menu = {
           "price": 1200,
           "image": "",
           "urlImage": "default"
-        },
-        {
-          "id": 44,
-          "name": {
-            "es": "Pepsi",
-            "en": "Pepsi",
-            "fr": "Pepsi"
-          },
-          "description": {
-            "es": "",
-            "en": "",
-            "fr": ""
-          },
-          "price": 1200,
-          "image": "",
-          "urlImage": "default"
         }
       ],
     },
@@ -1657,8 +1641,8 @@ export const menu = {
     "Trago de la casa": {
       "name": {
         "es": "Trago de la casa",
-        "en": "",
-        "fr": ""
+        "en": "House Drink",
+        "fr": "Boisson de la Maison"
       },
       "items": [
         {
