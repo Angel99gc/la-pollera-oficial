@@ -3,6 +3,7 @@
   "name": "la-pollera-oficial",
   "type": "module",
   "version": "1.0.beta",
+  "author": "Angel Gamboa Cruz",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
