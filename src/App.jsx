@@ -29,13 +29,13 @@ function App() {
         <Header />
         <Routes>
           <Route
-            path='/la-pollera-oficial'
+            path='/'
             element={
               <LandingPage />
             }
           />
           <Route
-            path='/la-pollera-oficial/menu'
+            path='/menu'
             element={
               <MenuPage />
             }
@@ -43,7 +43,7 @@ function App() {
           <Route
             path='/*'
             element={
-              <Navigate to={'/la-pollera-oficial'} />
+              <Navigate to={'/'} />
             }
           />
         </Routes>
