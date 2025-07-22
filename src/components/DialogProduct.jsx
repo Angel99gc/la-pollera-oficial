@@ -1,6 +1,10 @@
-import React from 'react'
 
-export const DialogProduct = () => {
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { useLanguage } from '../hooks/useLanguage';
+import NoImageAvailable from './ui/NoImageAvailable';
+
+export const DialogProduct = ({ selectedItem, setSelectedItem }) => {
+  const { language, t } = useLanguage();
   return (
     <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
       <DialogContent className="max-w-2xl bg-gray-800 border-gray-700 text-white">

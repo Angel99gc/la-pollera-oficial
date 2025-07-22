@@ -3,7 +3,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import NoImageAvailable from './ui/NoImageAvailable';
 
 //TODO: FALTA ACTUALIZAR DESCRIPCION DE MENU, PRECIOS EN DIFERENTES MONEDAS Y ACTUALIZAR IMAGENES
-export const ProductCard = ({ item, index, setSelectedItem, subCategory }) => {
+export const ProductCard = ({ item, index, setSelectedItem }) => {
   const { language, t } = useLanguage();
   return (
     <button
@@ -43,14 +43,6 @@ export const ProductCard = ({ item, index, setSelectedItem, subCategory }) => {
         </h3>
         <p className="text-gray-400 leading-relaxed">
           {item.description[language]}
-
-          {
-            (subCategory === "Red Meats" || subCategory === "Chicken") &&
-            <>
-              <br />
-              {t.menu.accompaniments[language]}
-            </>
-          }
         </p>
         <div className="flex items-center justify-between mt-4">
           <div className="flex bg-brand-orange text-white px-3 py-1 rounded-full font-bold mx-auto">

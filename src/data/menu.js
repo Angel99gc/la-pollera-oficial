@@ -4,10 +4,11 @@ export const menu = {
       "name": {
         "es": "Arroces",
         "en": "Rices",
-        "fr": ""
+        "fr": "Rizs"
       },
       "items": [
         {
+
           "id": 1,
           "name": {
             "es": "Arroz con Pollo",
@@ -124,7 +125,7 @@ export const menu = {
       "name": {
         "es": "Casado",
         "en": "Typical Food",
-        "fr": ""
+        "fr": "Plat Typique"
       },
       "items": [
         {
@@ -310,9 +311,9 @@ export const menu = {
             "fr": "Churrasco"
           },
           "description": {
-            "es": "Jugoso churrasco de res a la parrilla. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
-            "en": "Juicy grilled beef steak. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
-            "fr": "Churrasco de bœuf grillé et juteux. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
+            "es": "Jugoso churrasco de res a la parrilla. \n Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Juicy grilled beef steak. \n Includes 2 sides:  Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Churrasco de bœuf grillé et juteux. \n Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 7000,
           "image": "",
@@ -341,9 +342,9 @@ export const menu = {
             "fr": "Longe Grillée"
           },
           "description": {
-            "es": "Lomo de res a la plancha, tierno y jugoso. Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
-            "en": "Grilled beef loin, tender and juicy. Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
-            "fr": "Longe de bœuf grillée, tendre et juteuse. Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
+            "es": "Lomo de res a la plancha, tierno y jugoso.\n Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.",
+            "en": "Grilled beef loin, tender and juicy.\n Includes 2 sides: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.",
+            "fr": "Longe de bœuf grillée, tendre et juteuse.\n Comprend 2 accompagnements : Riz, Purée, Frites, Salade Verte ou Légumes."
           },
           "price": 6000,
           "image": "",
@@ -1679,36 +1680,81 @@ export const menu = {
       ]
     }
   },
-  // "combos": {
-  //   "Rices": {
-  //     "name": {
-  //       "es": "Arroces",
-  //       "en": "Rices",
-  //       "fr": ""
-  //     },
-  //     "items": [
-  //       {
-  //         "id": 1,
-  //         "name": {
-  //           "es": "Arroz con Pollo",
-  //           "en": "Chicken Rice",
-  //           "fr": "Riz au Poulet"
-  //         },
-  //         "description": {
-  //           "es": "",
-  //           "en": "",
-  //           "fr": ""
-  //         },
-  //         "price": 3800,
-  //         "image": "",
-  //         "urlImage": "arrozconpollo0.jpeg",
-  //         "ingredients": {
-  //           "es": "",
-  //           "en": "",
-  //           "fr": ""
-  //         }
-  //       }
-  //     ]
-  //   }
-  // }
+  "combos": {
+    "El Dúo Perfecto": {
+      "name": {
+        "es": "El Dúo Perfecto",
+        "en": "The Perfect Duo",
+        "fr": "Le Duo Parfait"
+      },
+      "items": [
+        {
+          "id": 100,
+          "name": {
+            "es": "Hamburguesa + Refresco",
+            "en": "Burger + Soft Drink",
+            "fr": "Hamburger + Boisson Gazeuse"
+          },
+          "description": {
+            "es": "Una deliciosa hamburguesa acompañada de un refresco frío. ¡El combo ideal para saciar tu hambre rápidamente!",
+            "en": "A delicious burger served with a cold soft drink. The perfect combo to satisfy your hunger fast!",
+            "fr": "Un délicieux hamburger accompagné d'une boisson gazeuse bien fraîche. Le combo parfait pour calmer votre faim rapidement !"
+          },
+          "price": 3200,
+          "image": "",
+          "urlImage": "default"
+        }
+      ]
+    },
+    "Lunch": {
+      "name": {
+        "es": "Almuerzo",
+        "en": "Lunch",
+        "fr": "Déjeuner"
+      },
+      "items": [
+        {
+          "id": 110,
+          "name": {
+            "es": "Casado + Tropical",
+            "en": "Typical Food + Tropical",
+            "fr": "Plat Typique + Tropical"
+          },
+          "description": {
+            "es": "Disfruta de un casado típico costarricense con tu bebida Tropical favorita. Ideal para un almuerzo completo y sabroso.",
+            "en": "Enjoy a traditional Costa Rican casado with your favorite Tropical drink. Perfect for a complete and tasty lunch.",
+            "fr": "Savourez un casado traditionnel costaricien avec votre boisson Tropical préférée. Parfait pour un déjeuner complet et savoureux."
+          },
+          "price": 3800,
+          "image": "",
+          "urlImage": "default"
+        }
+      ]
+    },
+    "Baldazo": {
+      "name": {
+        "es": "Baldazo",
+        "en": "Beer Bucket",
+        "fr": "Seau de Bières"
+      },
+      "items": [
+        {
+          "id": 120,
+          "name": {
+            "es": "6x5 Cervezas Nacionales",
+            "en": "6x5 National Beers",
+            "fr": "6x5 Bières Nationales"
+          },
+          "description": {
+            "es": "Llévate 6 cervezas nacionales por el precio de 5. ¡Perfecto para compartir con amigos!",
+            "en": "Get 6 national beers for the price of 5. Perfect for sharing with friends!",
+            "fr": "Prenez 6 bières nationales pour le prix de 5. Idéal pour partager entre amis !"
+          },
+          "price": 6750,
+          "image": "",
+          "urlImage": "default"
+        }
+      ]
+    }
+  }
 }

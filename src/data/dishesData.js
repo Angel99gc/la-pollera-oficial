@@ -57,24 +57,54 @@ export const dishesData = {
       ingredients: { es: 'Alitas de pollo, salsa BBQ o picante, aderezo', en: 'Chicken wings, BBQ or hot sauce, dressing', fr: 'Ailes de poulet, sauce BBQ ou piquante, vinaigrette' }
     }
   ],
-  // combos: [
-  //   {
-  //     id: 10,
-  //     name: { es: 'Cerveza Imperial', en: 'Imperial Beer', fr: 'Bière Imperial' },
-  //     description: { es: 'La cerveza de Costa Rica, refrescante y dorada.', en: 'The beer of Costa Rica, refreshing and golden.', fr: 'La bière du Costa Rica, rafraîchissante et dorée.' },
-  //     price: '1350',
-  //     image: 'A cold bottle of Imperial beer with condensation',
-  //     urlImage: 'default',
-  //     ingredients: { es: 'Agua, malta de cebada, lúpulo', en: 'Water, barley malt, hops', fr: 'Eau, malt d\'orge, houblon' }
-  //   },
-  //   {
-  //     id: 11,
-  //     name: { es: 'Sangría de la Casa', en: 'House Sangria', fr: 'Sangria Maison' },
-  //     description: { es: 'Refrescante sangría preparada con vino y frutas frescas.', en: 'Refreshing sangria prepared with wine and fresh fruits.', fr: 'Sangria rafraîchissante préparée avec du vin et des fruits frais.' },
-  //     price: '1500',
-  //     image: 'A glass of red sangria filled with chopped fruits and ice',
-  //     urlImage: 'default',
-  //     ingredients: { es: 'Vino tinto, frutas, licor, soda', en: 'Red wine, fruits, liquor, soda', fr: 'Vin rouge, fruits, liqueur, soda' }
-  //   }
-  // ]
+  combos: [
+    {
+      id: 100,
+      "name": {
+        "es": "Hamburguesa + Refresco",
+        "en": "Burger + Soft Drink",
+        "fr": "Hamburger + Boisson Gazeuse"
+      },
+      "description": {
+        "es": "Una deliciosa hamburguesa acompañada de un refresco frío. ¡El combo ideal para saciar tu hambre rápidamente!",
+        "en": "A delicious burger served with a cold soft drink. The perfect combo to satisfy your hunger fast!",
+        "fr": "Un délicieux hamburger accompagné d'une boisson gazeuse bien fraîche. Le combo parfait pour calmer votre faim rapidement !"
+      },
+      "price": 3200,
+      "image": "",
+      "urlImage": "default"
+    },
+    {
+      id: 110,
+      "name": {
+        "es": "Casado + Tropical",
+        "en": "Typical Food + Tropical",
+        "fr": "Plat Typique + Tropical"
+      },
+      "description": {
+        "es": "Disfruta de un casado típico costarricense con tu bebida Tropical favorita. Ideal para un almuerzo completo y sabroso.",
+        "en": "Enjoy a traditional Costa Rican casado with your favorite Tropical drink. Perfect for a complete and tasty lunch.",
+        "fr": "Savourez un casado traditionnel costaricien avec votre boisson Tropical préférée. Parfait pour un déjeuner complet et savoureux."
+      },
+      "price": 3800,
+      "image": "",
+      "urlImage": "default"
+    },
+    {
+      "id": 120,
+      "name": {
+        "es": "6x5 Cervezas Nacionales",
+        "en": "6x5 National Beers",
+        "fr": "6x5 Bières Nationales"
+      },
+      "description": {
+        "es": "Llévate 6 cervezas nacionales por el precio de 5. ¡Perfecto para compartir con amigos!",
+        "en": "Get 6 national beers for the price of 5. Perfect for sharing with friends!",
+        "fr": "Prenez 6 bières nationales pour le prix de 5. Idéal pour partager entre amis !"
+      },
+      "price": 6750,
+      "image": "",
+      "urlImage": "default"
+    }
+  ]
 };
