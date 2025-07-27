@@ -5,6 +5,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import { ProductCard } from "../components/ProductCard";
 import { DialogProduct } from "../components/DialogProduct";
 import ProductItem from "../components/ProductItem";
+import Header from "../components/Header";
 
 
 export default function MenuListItemPage() {
@@ -27,6 +28,8 @@ export default function MenuListItemPage() {
 
   return (
     <>
+      <Header />
+
       <main>
         <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden max-w-[1400px] mx-auto">
 

@@ -28,7 +28,7 @@ function App() {
           {/* <link rel="canonical" href="https://lapollera.com" /> */}
         </Helmet>
 
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route
             path='/'

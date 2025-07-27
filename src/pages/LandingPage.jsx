@@ -21,6 +21,8 @@ export const LandingPage = () => {
 
   return (
     <>
+      <Header />
+
       <main>
         <Hero />
         <DishesSection />

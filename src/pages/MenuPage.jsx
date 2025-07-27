@@ -74,6 +74,8 @@ const MenuPage = () => {
 
   return (
     <>
+      <Header />
+
       <main>
         <section id="menu" className="relative min-h-screen flex items-start justify-center overflow-hidden">
           {/* <header className="bg-white shadow-md">

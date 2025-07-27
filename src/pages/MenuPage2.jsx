@@ -11,7 +11,7 @@ export default function MenuPage2() {
   return (
     <div className="flex  flex-col">
       <HeaderMenuUI />
-      <MenuPage />
+      {/* <MenuPage /> */}
     </div>
   )
 }
