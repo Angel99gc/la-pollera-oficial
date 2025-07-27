@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster';
 import { LanguageProvider } from '@/hooks/useLanguage';
-import MenuPage from './pages/MenuPage';
 import { LandingPage } from './pages/LandingPage';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { Navigate, Route, Router, Routes } from 'react-router';
+import MenuPage2 from './pages/MenuPage2';
+import MenuPage from './pages/MenuPage';
+import MenuListItemPage from './pages/MenuListItemPage';
 
 function App() {
 
@@ -38,6 +40,18 @@ function App() {
             path='/menu'
             element={
               <MenuPage />
+            }
+          />
+          <Route
+            path='/menu2'
+            element={
+              <MenuPage2 />
+            }
+          />
+          <Route
+            path='/menu3'
+            element={
+              <MenuListItemPage />
             }
           />
           <Route
