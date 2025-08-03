@@ -836,14 +836,14 @@ export const menu = {
             "fr": "Pâtes dans une sauce crémeuse au parmesan et au beurre."
           },
           "price": 4000,
-          "urlImage": "spaguettialfredo.jpeg"
+          "urlImage": "default"
         },
         {
           "id": 152,
           "name": {
-            "es": "Spaghetti Marinara",
-            "en": "Spaghetti Marinara",
-            "fr": "Spaghetti Marinara"
+            "es": "Spaghetti Marinera",
+            "en": "Spaghetti Marinera",
+            "fr": "Spaghetti Marinera"
           },
           "description": {
             "es": "Pasta con salsa de mariscos y tomate fresco.",
@@ -852,7 +852,7 @@ export const menu = {
           },
           "price": 4500,
           "image": "",
-          "urlImage": "default"
+          "urlImage": "spaguettimarinera.jpeg"
         },
         {
           "id": 153,

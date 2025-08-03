@@ -14,13 +14,6 @@ const ContactSection = () => {
       color: 'text-brand-orange'
     },
     {
-      icon: FaPhone,
-      title: t.contact.phone,
-      content: '+506 2478-0213',
-      href: 'tel:+50624780213',
-      color: 'text-brand-orange'
-    },
-    {
       icon: FaWhatsapp,
       title: "Whatsapp",
       content: '+506 2478-0213',

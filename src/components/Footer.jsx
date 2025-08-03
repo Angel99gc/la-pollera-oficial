@@ -29,10 +29,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: FaFacebook, label: 'Facebook' },
-    { icon: FaInstagram, label: 'Instagram' },
+    { icon: FaFacebook, label: 'Facebook', url: "https://www.facebook.com/profile.php?id=100064138835829" },
+    { icon: FaInstagram, label: 'Instagram', url: "https://www.instagram.com/restaurantelapollera2024/" },
     { icon: FaTwitter, label: 'Twitter' },
-    { icon: FaWhatsapp, label: 'Whatsapp' }
+    { icon: FaWhatsapp, label: 'Whatsapp', url: "https://wa.me/50624780213" }
   ];
 
   return (
@@ -52,10 +52,10 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
-                social.label === 'Whatsapp' ?
+                social.url ?
                   <a
                     key={index}
-                    href='https://wa.me/50624780213'
+                    href={social.url}
                     target='_blank'
                     className="w-10 h-10 bg-gray-800 hover:bg-brand-orange rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                   >

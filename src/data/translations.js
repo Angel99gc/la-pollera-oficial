@@ -17,8 +17,8 @@ export const translations = {
       reserve: 'Reservar Mesa'
     },
     menu: {
-      title: 'Nuestro <span class="text-brand-red">Menú</span>',
-      subtitle: 'Sabores que te encantarán, preparados con los mejores ingredientes.',
+      title: 'Nuestro Menú <span class="text-brand-orange">Exquisito</span>',
+      subtitle: 'Una selección de nuestros mejores platos, preparados con pasión y los ingredientes más frescos.',
       appetizers: 'Bocas',
       foods: 'Comidas',
       drinks: 'Bebidas',
@@ -83,8 +83,8 @@ export const translations = {
       reserve: 'Reserve Table'
     },
     menu: {
-      title: 'Our <span class="text-brand-red">Menu</span>',
-      subtitle: 'Flavors you will love, prepared with the best ingredients.',
+      title: 'Our <span class="text-brand-orange">Exquisite</span> Menu',
+      subtitle: 'A selection of our best dishes, prepared with passion and the freshest ingredients.',
       appetizers: 'Appetizers',
       mains: 'Main Courses',
       desserts: 'Desserts',
@@ -152,7 +152,7 @@ export const translations = {
       reserve: 'Réserver une Table'
     },
     menu: {
-      title: 'Notre <span class="text-brand-red">Menu</span>',
+      title: 'Notre Menu <span class="text-brand-orange">Exquis</span>',
       subtitle: 'Des saveurs que vous allez adorer, préparées avec les meilleurs ingrédients.',
       appetizers: 'Entrées',
       mains: 'Plats Principaux',

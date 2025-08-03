@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img alt="Plato de pollo frito crujiente" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605543986887-5c59f90e1a54" />
+        <img alt="Plato de pollo frito crujiente" className="w-full h-full object-cover" src="local/Pollera9.jpg" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
       </div>
 

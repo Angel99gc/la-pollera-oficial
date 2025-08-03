@@ -116,7 +116,7 @@ const Header = () => {
             <a
               target='_blank'
               href={'tel:+50624780213'}
-              className="flex items-center space-x-2 bg-gradient-to-r from-brand-orange to-brand-yellow text-white px-6 py-2 rounded-full font-medium hover:from-brand-yellow hover:to-brand-orange transition-all duration-300 shadow-lg transform hover:scale-105"
+              className="flex items-center space-x-2 bg-gradient-to-r from-green-700 to-green-300 text-white px-6 py-2 rounded-full font-medium hover:from-green-200 hover:to-green-700 transition-all duration-300 shadow-lg transform hover:scale-105"
             >
               <FaPhone className="w-4 h-4" />
               <span>{t.nav.reservation}</span>
@@ -171,8 +171,9 @@ const Header = () => {
               <a
                 target='_blank'
                 href={'tel:+50624780213'}
-                className="block w-full text-left px-6 py-3 text-brand-orange font-medium hover:bg-gray-700 transition-colors duration-200"
+                className="flex w-full text-left px-6 py-3 text-green-700 font-medium hover:bg-gray-700 transition-colors duration-200 gap-2 items-center"
               >
+                <FaPhone className="w-4 h-4" />
                 {t.nav.reservation}
 
               </a>

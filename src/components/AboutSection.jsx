@@ -69,19 +69,20 @@ const AboutSection = () => {
             data-aos="fade-left"
             className="relative"
           >
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-700">
-              <img  alt="Interior del restaurante La Pollera" className="w-full h-96 object-cover" src="https://images.unsplash.com/photo-1527811313086-1971349d0fce" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gray-700">
+              <img alt="Interior del restaurante La Pollera" className="w-full h-96 object-cover" src="local/Pollera1.jpg" />
+              {/* <img alt="Interior del restaurante La Pollera" className="w-full h-96 object-cover" src="https://images.unsplash.com/photo-1527811313086-1971349d0fce" /> */}
             </div>
 
             <div
               data-aos="zoom-in" data-aos-delay="300"
-              className="absolute -bottom-8 -left-8 w-48 h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-gray-700"
+              className="absolute z-10 -bottom-8 -left-8 w-48 h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-gray-700"
             >
-              <img  alt="Plato de comida de La Pollera" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1656548784985-7006f26a901d" />
+              <img alt="Plato de comida de La Pollera" className="w-full h-full object-cover" src="menu/nachos0.jpeg" />
             </div >
 
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-brand-orange to-brand-yellow rounded-full opacity-20 animate-pulse-slow"></div>
-            <div className="absolute bottom-16 -right-8 w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-yellow rounded-full opacity-30 animate-float"></div>
+            <div className="absolute -top-4 -right-3 w-24 h-24 bg-gradient-to-br from-brand-orange to-brand-yellow rounded-full opacity-20 animate-pulse-slow"></div>
+            <div className="absolute bottom-16 -right-3 w-16 h-16 bg-gradient-to-br from-brand-orange to-brand-yellow rounded-full opacity-30 animate-float"></div>
           </div >
         </div>
       </div>

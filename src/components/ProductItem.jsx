@@ -6,7 +6,7 @@ export default function ProductItem({ item, index, setSelectedItem }) {
   return (
     <li
       key={`ProductItem-${index}`}
-      className="flex justify-between gap-x-6 p-5 text-white bg-gray-900 rounded-2xl shadow-2xl hover:bg-gray-800 cursor-pointer"
+      className="flex justify-between gap-x-6 p-5 text-white bg-gray-800 rounded-2xl shadow-2xl hover:bg-gray-700 cursor-pointer card-hover group border border-gray-700"
       data-aos="fade-up" data-aos-delay={index * 50}
       onClick={() => setSelectedItem(item)}
     >
