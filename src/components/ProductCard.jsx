@@ -41,7 +41,7 @@ export const ProductCard = ({ item, index, setSelectedItem }) => {
         <h3 className="font-display text-xl font-bold text-white mb-2">
           {item.name[language]}
         </h3>
-        <p className="text-gray-400 leading-relaxed">
+        <p className="text-gray-400 leading-relaxed line-clamp-2">
           {item.description[language]}
         </p>
         <div className="flex items-center justify-between mt-4">

@@ -44,7 +44,7 @@ export default function MenuListItemPage() {
                   {Object.entries(menuData).map(([category, subcategories]) => (
                     <div key={category} className="space-y-2">
                       <button onClick={() => onSelectCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
-                      ${activeCategory === category ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105"
+                      ${activeCategory === category ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-2xl transform scale-105"
                           : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
                         {t.menu[category]}
                       </button>
@@ -67,7 +67,7 @@ export default function MenuListItemPage() {
 
             {/* Contenido */}
             <div className="md:col-span-3">
-              <ul role="list" class=" grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <ul role="list" class=" grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {
                   !activeSubCategory ?
 

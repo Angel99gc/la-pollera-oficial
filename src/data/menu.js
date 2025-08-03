@@ -483,7 +483,7 @@ export const menu = {
             "fr": "Portion de frites croustillantes et dorées."
           },
           "price": 2000,
-          "urlImage": "ordenpapas0"
+          "urlImage": "ordenpapas0.jpeg"
         },
         {
           "id": 126,
