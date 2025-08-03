@@ -42,14 +42,14 @@ function App() {
               <MenuPage />
             }
           />
-          <Route
+          {/* <Route
             path='/menu2'
             element={
               <MenuPage2 />
             }
-          />
+          /> */}
           <Route
-            path='/menu3'
+            path='/menu2'
             element={
               <MenuListItemPage />
             }

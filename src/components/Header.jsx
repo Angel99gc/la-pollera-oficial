@@ -40,8 +40,8 @@ const Header = () => {
     {
       key: 'menu', label: t.nav.menu, id: 'menu', subItems: [
         { key: 'menu', label: 'Menu 1', id: 'menu' },
-        { key: 'menu2', label: 'Menu 2', id: 'menu2' },
-        { key: 'menu3', label: 'Menu 3', id: 'menu3' },
+        { key: 'menu2', label: 'Menu 2', id: 'menu2' }
+        // { key: 'menu3', label: 'Menu 3', id: 'menu3' },
       ]
     }
   ];
