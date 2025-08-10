@@ -196,7 +196,6 @@ export default defineConfig({
 		react(),
 		addTransformIndexHtml
 	],
-	base: "/la-pollera-oficial/", // muy importante para GitHub Pages
 	resolve: {
 		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json',],
 		alias: {

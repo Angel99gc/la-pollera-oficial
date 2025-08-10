@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Angel99gc.github.io/la-pollera-oficial",
   "name": "la-pollera-oficial",
   "type": "module",
   "version": "1.0.beta",
@@ -8,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deployGh": "gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.6",
