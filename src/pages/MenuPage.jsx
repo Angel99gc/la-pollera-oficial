@@ -124,6 +124,13 @@ const MenuPage = () => {
               <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
                 <h2 className="text-xl font-semibold mb-4">{t.nav.menu}</h2>
                 <div className="space-y-4">
+                  <div key={"Todos"} className="space-y-2">
+                    <button onClick={() => onSelectCategory("Todos")} className={`w-full text-left px-4 py-2 rounded-lg 
+                      ${activeCategory === "Todos" ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105"
+                        : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
+                      Todos
+                    </button>
+                  </div>
                   {Object.entries(menuData).map(([category, subcategories]) => (
                     <div key={category} className="space-y-2">
                       <button onClick={() => onSelectCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
