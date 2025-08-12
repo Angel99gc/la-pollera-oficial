@@ -42,12 +42,12 @@ function App() {
               <MenuPage />
             }
           />
-          {/* <Route
-            path='/menu2'
+          <Route
+            path='/menu3'
             element={
               <MenuPage2 />
             }
-          /> */}
+          />
           <Route
             path='/menu2'
             element={

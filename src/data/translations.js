@@ -25,7 +25,8 @@ export const translations = {
       combos: 'Combos',
       recommended: 'Platillos Recomendados',
       favorites: 'Platillos Favoritos',
-      accompaniments: 'Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.'
+      accompaniments: 'Incluye 2 acompañamientos: Arroz, Puré, Papas Fritas, Ensalada Verde o Vegetales.',
+      all: "Todos"
     },
     about: {
       title: 'Nuestra <span class="text-brand-red">Historia</span>',
@@ -93,7 +94,8 @@ export const translations = {
       combos: 'Combos',
       recommended: 'Recommended Dishes',
       favorites: 'Favorite Dishes',
-      accompaniments: 'Includes 2 accompaniments: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.'
+      accompaniments: 'Includes 2 accompaniments: Rice, Mashed Potatoes, French Fries, Green Salad, or Vegetables.',
+      all: "All"
     },
     about: {
       title: 'Our <span class="text-brand-red">Story</span>',
@@ -162,7 +164,8 @@ export const translations = {
       combos: 'Combos',
       recommended: 'Plats Recommandés',
       favorites: 'Plats Préférés',
-      accompaniments: 'Comprend 2 accompagnements : Riz, Purée de Pommes de Terre, Frites, Salade Verte ou Légumes.'
+      accompaniments: 'Comprend 2 accompagnements : Riz, Purée de Pommes de Terre, Frites, Salade Verte ou Légumes.',
+      all: "Tous"
     },
     about: {
       title: 'Notre <span class="text-brand-red">Histoire</span>',

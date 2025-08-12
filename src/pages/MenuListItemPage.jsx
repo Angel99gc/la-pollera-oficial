@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { menu as menuData } from '@/data/menu';
 import { useLanguage } from "../hooks/useLanguage";
@@ -14,6 +14,7 @@ export default function MenuListItemPage() {
   const [cartItems, setCartItems] = useState([]);
   const { language, t } = useLanguage();
   const [selectedItem, setSelectedItem] = useState(null);
+  const [menuAll, setMenuAll] = useState([]);
 
 
   const onSelectCategory = (category) => {
@@ -24,7 +25,17 @@ export default function MenuListItemPage() {
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
   };
-
+  useEffect(() => {
+    if (activeCategory === t.menu.all) {
+      const allItems = Object.values(menuData).flatMap(category =>
+        Object.values(category).flatMap(subcategory => subcategory)
+      );
+      setMenuAll(allItems);
+    }
+    else {
+      setMenuAll([]);
+    }
+  }, [activeCategory]);
 
   return (
     <>
@@ -41,6 +52,13 @@ export default function MenuListItemPage() {
               <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
                 <h2 className="text-xl font-semibold mb-4">{t.nav.menu}</h2>
                 <div className="space-y-4">
+                  <div key={t.menu.all} className="space-y-2">
+                    <button onClick={() => onSelectCategory(t.menu.all)} className={`w-full text-left px-4 py-2 rounded-lg 
+                      ${activeCategory === t.menu.all ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-2xl transform scale-105"
+                        : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
+                      {t.menu.all}
+                    </button>
+                  </div>
                   {Object.entries(menuData).map(([category, subcategories]) => (
                     <div key={category} className="space-y-2">
                       <button onClick={() => onSelectCategory(category)} className={`w-full text-left px-4 py-2 rounded-lg 
@@ -70,13 +88,18 @@ export default function MenuListItemPage() {
               <ul role="list" class=" grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {
                   !activeSubCategory ?
-
-                    Object.keys(menuData[activeCategory]).map(subCategoryKey => menuData[activeCategory][subCategoryKey].items.map((item, index) => {
-                      return (
-                        <ProductItem key={'ProductItem' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                    activeCategory === t.menu.all ?
+                      menuAll.map((products) => products.items.map((item, index) => {
+                        return <ProductItem key={'ProductCard' + item.name[language] + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                      })
                       )
-                    })
-                    )
+                      :
+                      Object.keys(menuData[activeCategory]).map(subCategoryKey => menuData[activeCategory][subCategoryKey].items.map((item, index) => {
+                        return (
+                          <ProductItem key={'ProductItem' + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                        )
+                      })
+                      )
 
                     : menuData[activeCategory][activeSubCategory].items.map((item, index) => (
                       <ProductItem key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} subCategory={activeSubCategory} />
