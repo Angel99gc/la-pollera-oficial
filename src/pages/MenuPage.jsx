@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiMenu, FiShoppingCart, FiX } from "react-icons/fi";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Header from '@/components/Header';
@@ -16,6 +16,7 @@ const MenuPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const { language, t } = useLanguage();
   const [selectedItem, setSelectedItem] = useState(null);
+  const [menuAll, setMenuAll] = useState([]);
 
   // const menuData = {
   //   foods: {
@@ -65,13 +66,24 @@ const MenuPage = () => {
   const onSelectCategory = (category) => {
     setActiveSubCategory('')
     setActiveCategory(category)
+
   }
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
   };
 
-
+  useEffect(() => {
+    if (activeCategory === t.menu.all) {
+      const allItems = Object.values(menuData).flatMap(category =>
+        Object.values(category).flatMap(subcategory => subcategory)
+      );
+      setMenuAll(allItems);
+    }
+    else {
+      setMenuAll([]);
+    }
+  }, [activeCategory]);
   return (
     <>
       <Header />
@@ -124,11 +136,11 @@ const MenuPage = () => {
               <div className="bg-gray-900 text-white rounded-lg shadow-md p-4">
                 <h2 className="text-xl font-semibold mb-4">{t.nav.menu}</h2>
                 <div className="space-y-4">
-                  <div key={"Todos"} className="space-y-2">
-                    <button onClick={() => onSelectCategory("Todos")} className={`w-full text-left px-4 py-2 rounded-lg 
-                      ${activeCategory === "Todos" ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105"
+                  <div key={t.menu.all} className="space-y-2">
+                    <button onClick={() => onSelectCategory(t.menu.all)} className={`w-full text-left px-4 py-2 rounded-lg 
+                      ${activeCategory === t.menu.all ? "bg-gradient-to-r from-red-700 to-brand-orange text-white shadow-lg transform scale-105"
                         : "bg-gray-800 text-gray-300 hover:bg-gray-700 border border-gray-700"}`}>
-                      Todos
+                      {t.menu.all}
                     </button>
                   </div>
                   {Object.entries(menuData).map(([category, subcategories]) => (
@@ -159,10 +171,15 @@ const MenuPage = () => {
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                   !activeSubCategory ?
-                    Object.keys(menuData[activeCategory]).map(subCategoryKey => menuData[activeCategory][subCategoryKey].items.map((item, index) => {
-                      return <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} subCategory={activeSubCategory} />
-                    })
-                    )
+                    activeCategory === t.menu.all ?
+                      menuAll.map((products) => products.items.map((item, index) => {
+                        return <ProductCard key={'ProductCard' + item.name[language] + index} item={item} index={index} setSelectedItem={setSelectedItem} />
+                      })
+                      )
+                      : Object.keys(menuData[activeCategory]).map(subCategoryKey => menuData[activeCategory][subCategoryKey].items.map((item, index) => {
+                        return <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} subCategory={activeSubCategory} />
+                      })
+                      )
 
                     : menuData[activeCategory][activeSubCategory].items.map((item, index) => (
                       <ProductCard key={'ProductCard' + index} item={item} index={index} setSelectedItem={setSelectedItem} subCategory={activeSubCategory} />
