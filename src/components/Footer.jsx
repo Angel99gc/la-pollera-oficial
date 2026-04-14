@@ -1,7 +1,6 @@
-import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
-import { useLanguage } from '@/hooks/useLanguage';
 import { useToast } from '@/components/ui/use-toast';
+import { useLanguage } from '@/hooks/useLanguage';
+import { FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -35,6 +34,7 @@ const Footer = () => {
     { icon: FaWhatsapp, label: 'Whatsapp', url: "https://wa.me/50624780213" }
   ];
 
+  const year = new Date().getFullYear()
   return (
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-16">
@@ -129,7 +129,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            © 2025 La Pollera. {t.footer.rights}.
+            © {year} La Pollera. {t.footer.rights}.
           </p>
         </div>
       </div>
